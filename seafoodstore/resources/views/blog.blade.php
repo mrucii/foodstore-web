@@ -156,9 +156,9 @@
         @foreach($post as $key=>$value)
           <div class="col-lg-4">
             <div class="box">
-              <h4>{{$value->title}}</h4>
-              <img src="{{asset('img/event-birthday.jpg')}}" class="img-fluid" alt="">
               
+              <img src="{{asset('img/event-birthday.jpg')}}" class="img-fluid" alt="">
+              <h4>{{$value->title}}</h4>
               <h6>{{$value->created_at}}</h6>
               <p>{{$value->isi}}<br></br>
               <a href="#">Read more</a></p>
