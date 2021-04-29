@@ -10,22 +10,22 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{asset('img/favicon.png')}}" rel="icon">
+  <link href="{{asset('img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+  <link href="{{asset('vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{asset('vendor/animate.css/animate.min.css')}}" rel="stylesheet">
+  <link href="{{asset('vendor/venobox/venobox.css')}}" rel="stylesheet">
+  <link href="{{asset('vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Delicious - v2.2.1
@@ -83,7 +83,7 @@
         <div class="carousel-inner" role="listbox">
 
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background: url(assets/img/slide/slide-1.jpg);">
+          <div class="carousel-item active" style="background: url('{{asset('img/slide/slide-1.jpg')}}');">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown"><span>Cahaya</span> Seafood</h2>
@@ -100,7 +100,7 @@
           </div>
 
           <!-- Slide 2 -->
-          <div class="carousel-item" style="background: url(assets/img/slide/slide-2.jpg);">
+          <div class="carousel-item" style="background: url('{{asset('img/slide/slide-2.jpg')}}');">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown">Cahaya Seafood</h2>
@@ -113,7 +113,7 @@
           </div>
 
           <!-- Slide 3 -->
-          <div class="carousel-item" style="background: url(assets/img/slide/slide-3.jpg);">
+          <div class="carousel-item" style="background: url('{{asset('img/slide/slide-3.jpg')}}');">
             <div class="carousel-background"><img src="assets/img/slide/slide-3.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
@@ -153,74 +153,18 @@
         </div>
 
         <div class="row">
-
+        @foreach($post as $key=>$value)
           <div class="col-lg-4">
             <div class="box">
-              <span>01</span>
-              <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
-              <h4>Produk</h4>
-              <h6>4 Juli 2021 by Mutiara</h6>
-              <p>Fresh dan Organik, harus segar, bersih, sehat, dan organik.<br></br>
+              <h4>{{$value->title}}</h4>
+              <img src="{{asset('img/event-birthday.jpg')}}" class="img-fluid" alt="">
+              
+              <h6>{{$value->created_at}}</h6>
+              <p>{{$value->isi}}<br></br>
               <a href="#">Read more</a></p>
             </div>
           </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box">
-              <span>02</span>
-              <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
-              <h4>Harga</h4>
-              <h6>4 Juli 2021 by Mutiara</h6>
-              <p>Harga kompetitif berpegang pada prinsip fresh dan organik.<br></br>
-              <a href="#">Read more</a></p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box">
-              <span>03</span>
-              <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
-              <h4> Delivery</h4>
-              <h6>4 Juli 2021 by Mutiara</h6>
-              <p>Dalam pengiriman produk menggunakan
-                kemasan yang aman.<br></br>
-              <a href="#">Read more</a></p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="box">
-              <span>01</span>
-              <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
-              <h4>Produk</h4>
-              <h6>4 Juli 2021 by Mutiara</h6>
-              <p>Fresh dan Organik, harus segar, bersih, sehat, dan organik.<br></br>
-              <a href="#">Read more</a></p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box">
-              <span>02</span>
-              <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
-              <h4>Harga</h4>
-              <h6>4 Juli 2021 by Mutiara</h6>
-              <p>Harga kompetitif berpegang pada prinsip fresh dan organik.<br></br>
-              <a href="#">Read more</a></p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box">
-              <span>03</span>
-              <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
-              <h4> Delivery</h4>
-              <h6>4 Juli 2021 by Mutiara</h6>
-              <p>Dalam pengiriman produk menggunakan
-                kemasan yang aman.<br></br>
-              <a href="#">Read more</a></p>
-            </div>
-          </div>
-          
+        @endforeach
 
         </div>
         <div class="row text-center">
@@ -427,17 +371,17 @@
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+  <script src="{{asset('vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{asset('vendor/jquery-sticky/jquery.sticky.js')}}"></script>
+  <script src="{asset('vendor/isotope-layout/isotope.pkgd.min.js')}"></script>
+  <script src="{{asset('vendor/venobox/venobox.min.js')}}"></script>
+  <script src="{{asset('vendor/owl.carousel/owl.carousel.min.js')}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{asset('js/main.js')}}"></script>
 
 </body>
 
