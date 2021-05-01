@@ -10,22 +10,22 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{asset('img/favicon.png')}}" rel="icon">
+  <link href="{{asset('img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+  <link href="{{asset('vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{asset('vendor/animate.css/animate.min.css')}}" rel="stylesheet">
+  <link href="{{asset('vendor/venobox/venobox.css')}}" rel="stylesheet">
+  <link href="{{asset('vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Delicious - v2.2.1
@@ -83,14 +83,14 @@
         <div class="carousel-inner" role="listbox">
 
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background: url(assets/img/slide/slide-1.jpg);">
+          <div class="carousel-item active" style="background: url('{{asset('img/slide/slide-1.jpg')}}');">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown"><span>Cahaya</span> Seafood</h2>
                 <p class="animate__animated animate__fadeInUp">Pengalaman menekuni pengelolaan bidang
-                usaha tambak udang sejak tahun 2014 telah memberikan banyak pelajaran berharga
-                untuk senantiasa meningkatkan profesionalisme usaha dalam hal peningkatan
-                manajemen usaha.</p>
+                  usaha tambak udang sejak tahun 2014 telah memberikan banyak pelajaran berharga
+                  untuk senantiasa meningkatkan profesionalisme usaha dalam hal peningkatan
+                  manajemen usaha.</p>
                 <div>
                   <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Contact Us</a>
                 </div>
@@ -99,7 +99,7 @@
           </div>
 
           <!-- Slide 2 -->
-          <div class="carousel-item" style="background: url(assets/img/slide/slide-2.jpg);">
+          <div class="carousel-item" style="background: url('{{asset('img/slide/slide-2.jpg')}}');">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown">Cahaya Seafood</h2>
@@ -112,7 +112,7 @@
           </div>
 
           <!-- Slide 3 -->
-          <div class="carousel-item" style="background: url(assets/img/slide/slide-3.jpg);">
+          <div class="carousel-item" style="background: url('{{asset('img/slide/slide-3.jpg')}}');">
             <div class="carousel-background"><img src="assets/img/slide/slide-3.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
@@ -149,7 +149,7 @@
 
         <div class="row">
 
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
+          <div class="col-lg-5 align-items-stretch video-box" style="background-image: url('{{asset('img/about.jpg')}}');">
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
@@ -231,7 +231,7 @@
                     pencetakan pengusaha baru.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-1.jpg" alt="" class="img-fluid">
+                    <img src="{{asset('img/specials-1.jpg')}}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -251,7 +251,7 @@
                     </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-2.jpg" alt="" class="img-fluid">
+                    <img src="{{asset('img/specials-2.jpg')}}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -271,7 +271,7 @@
                     </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-3.jpg" alt="" class="img-fluid">
+                    <img src="{{asset('img/specials-3.jpg')}}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -289,7 +289,7 @@
                     </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-3.jpg" alt="" class="img-fluid">
+                    <img src="{{asset('img/specials-3.jpg')}}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>     
@@ -306,7 +306,7 @@
 
         <div class="row">
 
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
+          <div class="col-lg-5 align-items-stretch video-box" style="background-image: url('{{asset('img/about.jpg')}}');">
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
@@ -341,7 +341,7 @@
 
         <div class="row">
 
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
+          <div class="col-lg-5 align-items-stretch video-box" style="background-image: url('{{asset('img/about.jpg')}}');">
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
@@ -379,7 +379,7 @@
 
           <div class="row event-item">
             <div class="col-lg-6">
-              <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+              <img src="{{asset('img/event-birthday.jpg')}}" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 content">
               <h3>KEMASAN MINI (1-5 KG)</h3>
@@ -403,7 +403,7 @@
 
           <div class="row event-item">
             <div class="col-lg-6">
-              <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+              <img src="{{asset('img/event-birthday.jpg')}}" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 content">
               <h3>KEMASAN BESAR ( > 5KG)</h3>
@@ -460,17 +460,17 @@
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+  <script src="{{asset('vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{asset('vendor/jquery-sticky/jquery.sticky.js')}}"></script>
+  <script src="{{asset('vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{asset('vendor/venobox/venobox.min.js')}}"></script>
+  <script src="{{asset('vendor/owl.carousel/owl.carousel.min.js')}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{asset('js/main.js')}}"></script>
 
 </body>
 

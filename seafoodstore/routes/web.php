@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::get('/post', 'post_controller@index');
 
 Route::get('/produk', 'product_controller@index');
+
+Route::get('/tentang', function () {
+    return view('tentang');
+});
