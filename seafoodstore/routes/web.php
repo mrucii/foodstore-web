@@ -25,3 +25,4 @@ Route::get('/produk', 'product_controller@index');
 Route::get('/tentang', function () {
     return view('tentang');
 });
+
