@@ -40,7 +40,7 @@
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top topbar-transparent">
     <div class="container text-right">
-      <i class="icofont-phone"></i> +1 5589 55488 55
+      <i class="icofont-phone"></i> +62 812 7400 1070
       <i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sat: 11:00 AM - 23:00 PM
     </div>
   </section>
@@ -150,8 +150,9 @@
 
         <div class="row">
 
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("{{asset('img/slide/slide-1.jpg')}}");'>
+            <a href=""></a>
+            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
           </div>
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">

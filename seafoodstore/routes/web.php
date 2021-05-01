@@ -34,3 +34,9 @@ Route::get('/resep', function () {
 Route::get('/resep1', function () {
     return view('detailresep');
 });
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/home', function () {
+    return view('home');
+});
