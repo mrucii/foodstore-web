@@ -58,9 +58,9 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#about">Tentang</a></li>
+          <li><a href="{{route('tentang')}}">Tentang</a></li>
           <li><a href="{{route('products')}}">Produk</a></li>
-          <li><a href="#specials">Resep</a></li>
+          <li><a href="{{route('reseps')}}">Resep</a></li>
           <li class="active"><a href="{{route('blogs')}}">Blog</a></li>
           <!-- <li><a href="#chefs">Chefs</a></li><!--  -->
           <!-- <li><a href="#gallery">Produk</a></li> -->
