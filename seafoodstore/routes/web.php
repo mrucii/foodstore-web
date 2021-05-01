@@ -18,16 +18,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/post', 'post_controller@index');
+Route::get('/post', 'post_controller@index')->name('blogs');
 
-Route::get('/produk', 'product_controller@index');
+Route::get('/produk', 'product_controller@index')->name('products');
 
 Route::get('/tentang', function () {
     return view('tentang');
 });
-Route::get('/blog1', function () {
-    return view('detailblog');
-});
+Route::get('/blog/{id}', 'post_controller@detail_blog')-> name('blog_details');
+
 Route::get('/resep', function () {
     return view('resep');
 });

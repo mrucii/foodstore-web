@@ -57,11 +57,11 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li ><a href="index.html">Home</a></li>
           <li><a href="#about">Tentang</a></li>
-          <li><a href="#menu">Produk</a></li>
+          <li><a href="{{route('products')}}">Produk</a></li>
           <li><a href="#specials">Resep</a></li>
-          <li><a href="#events">Blog</a></li>
+          <li class="active"><a href="{{route('blogs')}}">Blog</a></li>
           <!-- <li><a href="#chefs">Chefs</a></li><!--  -->
           <!-- <li><a href="#gallery">Produk</a></li> -->
           <li><a href="#contact">Contact</a></li>
@@ -161,7 +161,7 @@
               <h4>{{$value->title}}</h4>
               <h6>{{$value->created_at}} - {{$value->author}}</h6>
               <p>{{$value->isi}}<br></br>
-              <a href="#">Read more</a></p>
+              <a href="{{route('blog_details', ['id' => $value->id])}}">Read more</a></p>
             </div>
           </div>
         @endforeach

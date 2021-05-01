@@ -18,6 +18,12 @@ class post_controller extends Controller
         return view('blog', ['post' => $post]);
     }
 
+    public function detail_blog($id)
+    {
+        $post_detail = post::where('id',$id)->get();
+        return view('detailblog', ['post_detail' => $post_detail]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
