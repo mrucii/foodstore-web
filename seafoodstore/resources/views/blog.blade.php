@@ -57,14 +57,14 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li ><a href="index.html">Home</a></li>
+          <li ><a href="/">Home</a></li>
           <li><a href="{{route('tentang')}}">Tentang</a></li>
           <li><a href="{{route('products')}}">Produk</a></li>
           <li><a href="{{route('reseps')}}">Resep</a></li>
           <li class="active"><a href="{{route('blogs')}}">Blog</a></li>
           <!-- <li><a href="#chefs">Chefs</a></li><!--  -->
           <!-- <li><a href="#gallery">Produk</a></li> -->
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
 
           <li class="book-a-table text-center"><a href="#book-a-table">Contact Us</a></li>
         </ul>

@@ -57,14 +57,14 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="{{route('tentang')}}">Tentang</a></li>
+          <li><a href="/">Home</a></li>
+          <li class="active"><a href="{{route('tentang')}}">Tentang</a></li>
           <li><a href="{{route('products')}}">Produk</a></li>
           <li><a href="{{route('reseps')}}">Resep</a></li>
           <li><a href="{{route('blogs')}}">Blog</a></li>
           <!-- <li><a href="#chefs">Chefs</a></li> -->
           <!-- <li><a href="#gallery">Produk</a></li> -->
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
 
           <li class="book-a-table text-center"><a href="#book-a-table">Contact Us</a></li>
         </ul>
@@ -314,7 +314,7 @@
 
             <div class="content">
               <h3>Pengelolaan <strong>Tambak</strong></h3>
-              <p>
+              <p style="text-align: justify;">
                 Bergerak di bidang pengelolaan tambak dengan luas 26 Ha dengan
                 menggunakan metode Tradisional, <b>CV Cahaya Bangun Majujaya di dukung
                 oleh 20 puluh pekerja (mitra kerja)</b>, 6 mitra manajemen terdiri dari 1 orang
