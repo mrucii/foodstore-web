@@ -159,7 +159,7 @@
               
               <img src="{{asset('img/event-birthday.jpg')}}" class="img-fluid" alt="">
               <h4>{{$value->title}}</h4>
-              <h6>{{$value->created_at}}</h6>
+              <h6>{{$value->created_at}} - {{$value->author}}</h6>
               <p>{{$value->isi}}<br></br>
               <a href="#">Read more</a></p>
             </div>
@@ -376,7 +376,7 @@
   <script src="{{asset('vendor/jquery.easing/jquery.easing.min.js')}}"></script>
   <script src="{{asset('vendor/php-email-form/validate.js')}}"></script>
   <script src="{{asset('vendor/jquery-sticky/jquery.sticky.js')}}"></script>
-  <script src="{asset('vendor/isotope-layout/isotope.pkgd.min.js')}"></script>
+  <script src="{{asset('vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
   <script src="{{asset('vendor/venobox/venobox.min.js')}}"></script>
   <script src="{{asset('vendor/owl.carousel/owl.carousel.min.js')}}"></script>
 

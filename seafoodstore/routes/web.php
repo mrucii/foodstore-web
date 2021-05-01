@@ -18,3 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/post', 'post_controller@index');
+
+Route::get('/produk', function(){
+    return view('produk');
+});
