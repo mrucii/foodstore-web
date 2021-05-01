@@ -150,8 +150,8 @@
 
         <div class="row">
 
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          <div class="col-lg-5 align-items-stretch video-box" style="background: url('{{asset('img/about.jpg')}}');">
+            
           </div>
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">

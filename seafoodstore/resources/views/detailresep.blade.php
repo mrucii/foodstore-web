@@ -150,7 +150,7 @@
 
         <div class="row">
         @foreach($resep_detail as $key=>$value) 
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
+          <div class="col-lg-5 align-items-stretch video-box" style="background: url('{{asset('img/about.jpg')}}');">
             <a href="{{$value->link_youtube}}" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
