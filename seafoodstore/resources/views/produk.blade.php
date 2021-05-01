@@ -255,87 +255,27 @@
         </div>
 
         <div class="row menu-container">
-
+        @foreach($product as $key=>$value)
+          @if($value->jenis == 'ikan')
           <div class="col-lg-6 menu-item filter-starters">
             <div class="menu-content">
-              <a href="#">Udang Pancet Restaurant</a><span>40-50 ekor/Kg</span>
+              <a href="#">{{$value->nama_product}}</a><span>{{$value->isi}} ekor/Kg</span>
             </div>
             <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
+              {{$value->deskripsi}}
             </div>
           </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <div class="menu-content">
-              <a href="#">Udang Pancet Restaurant</a><span>40-50 ekor/Kg</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-starters">
-            <div class="menu-content">
-              <a href="#">Udang Pancet Restaurant</a><span>40-50 ekor/Kg</span>
-            </div>
-            <div class="menu-ingredients">
-              A delicate crab cake served on a toasted roll with lettuce and tartar sauce
-            </div>
-          </div>
-
+          @else
           <div class="col-lg-6 menu-item filter-salads">
             <div class="menu-content">
-              <a href="#">Udang Pancet Restaurant</a><span>40-50 ekor/Kg</span>
+              <a href="#">{{$value->nama_product}}</a><span>{{$value->isi}} ekor/Kg</span>
             </div>
             <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
+              {{$value->deskripsi}}
             </div>
           </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <div class="menu-content">
-              <a href="#">Udang Pancet Restaurant</a><span>40-50 ekor/Kg</span>
-            </div>
-            <div class="menu-ingredients">
-              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-starters">
-            <div class="menu-content">
-              <a href="#">Udang Pancet Restaurant</a><span>40-50 ekor/Kg</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <div class="menu-content">
-              <a href="#">Udang Pancet Restaurant</a><span>40-50 ekor/Kg</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach, crisp romaine, tomatoes, and Greek olives
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <div class="menu-content">
-              <a href="#">Udang Pancet Restaurant</a><span>40-50 ekor/Kg</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <div class="menu-content">
-              <a href="#">Udang Pancet Restaurant</a><span>40-50 ekor/Kg</span>
-            </div>
-            <div class="menu-ingredients">
-              Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
-            </div>
-          </div>
+          @endif
+        @endforeach
 
         </div>
 
