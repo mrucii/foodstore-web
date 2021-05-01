@@ -143,28 +143,95 @@
   </section><!-- End Hero -->
 
   <main id="main">
-
-    <section id="events" class="why-us">
+<section id="events" class="why-us">
       <div class="container">
 
         <div class="section-title">
-          <h2>Artikel <span>Cahaya Seafood</span></h2>
+          <h2>Inspirasi Resep <span>Masakan</span></h2>
           <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
         </div>
 
         <div class="row">
-        @foreach($post as $key=>$value)
+
           <div class="col-lg-4">
             <div class="box">
-              
-              <img src="{{asset('img/event-birthday.jpg')}}" class="img-fluid" alt="">
-              <h4>{{$value->title}}</h4>
-              <h6>{{$value->created_at}} - {{$value->author}}</h6>
-              <p>{{$value->isi}}<br></br>
+              <span></span>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" allowfullscreen></iframe>
+              </div>
+              <h4>Produk</h4>
+              <!-- <h6>4 Juli 2021 by Mutiara</h6> -->
+              <p>Fresh dan Organik, harus segar, bersih, sehat, dan organik.<br></br>
               <a href="#">Read more</a></p>
             </div>
           </div>
-        @endforeach
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <!-- <span>02</span> -->
+              <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" allowfullscreen></iframe>
+                </div>
+              <h4>Harga</h4>
+              <!-- <h6>4 Juli 2021 by Mutiara</h6> -->
+              <p>Harga kompetitif berpegang pada prinsip fresh dan organik.<br></br>
+              <a href="#">Read more</a></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span></span>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" allowfullscreen></iframe>
+              </div>
+              <h4> Delivery</h4>
+              <!-- <h6>4 Juli 2021 by Mutiara</h6> -->
+              <p>Dalam pengiriman produk menggunakan
+                kemasan yang aman.<br></br>
+              <a href="#">Read more</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box">
+              <span></span>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" allowfullscreen></iframe>
+              </div>
+              <h4>Produk</h4>
+              <!-- <h6>4 Juli 2021 by Mutiara</h6> -->
+              <p>Fresh dan Organik, harus segar, bersih, sehat, dan organik.<br></br>
+              <a href="#">Read more</a></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span></span>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" allowfullscreen></iframe>
+              </div>
+              <h4>Harga</h4>
+              <!-- <h6>4 Juli 2021 by Mutiara</h6> -->
+              <p>Harga kompetitif berpegang pada prinsip fresh dan organik.<br></br>
+              <a href="#">Read more</a></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span></span>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" allowfullscreen></iframe>
+              </div>
+              <h4> Delivery</h4>
+              <!-- <h6>4 Juli 2021 by Mutiara</h6> -->
+              <p>Dalam pengiriman produk menggunakan
+                kemasan yang aman.<br></br>
+              <a href="#">Read more</a></p>
+            </div>
+          </div>
+          
 
         </div>
         <div class="row text-center">
