@@ -18,19 +18,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/post', 'post_controller@index');
+Route::get('/blog', 'post_controller@index')->name('blogs');
 
-Route::get('/produk', 'product_controller@index');
+Route::get('/blog/{id}', 'post_controller@detail_blog')-> name('blog_details');
+
+Route::get('/produk', 'product_controller@index')->name('products');
+
+Route::get('/resep', 'resep_controller@index')->name('reseps');
+
+Route::get('/resep/{id}', 'resep_controller@detail_resep')-> name('resep_details');
 
 Route::get('/tentang', function () {
     return view('tentang');
-});
-Route::get('/blog1', function () {
-    return view('detailblog');
-});
-Route::get('/resep', function () {
-    return view('resep');
-});
+})->name('tentang');
+
 Route::get('/resep1', function () {
     return view('detailresep');
 });

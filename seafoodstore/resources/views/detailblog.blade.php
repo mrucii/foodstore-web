@@ -57,11 +57,11 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">Tentang</a></li>
-          <li><a href="#menu">Produk</a></li>
-          <li><a href="#specials">Resep</a></li>
-          <li><a href="#events">Blog</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="{{route('tentang')}}">Tentang</a></li>
+          <li><a href="{{route('products')}}">Produk</a></li>
+          <li><a href="{{route('reseps')}}">Resep</a></li>
+          <li class="active"><a href="{{route('blogs')}}">Blog</a></li>
           <!-- <li><a href="#chefs">Chefs</a></li><!--  -->
           <!-- <li><a href="#gallery">Produk</a></li> -->
           <li><a href="#contact">Contact</a></li>
@@ -150,42 +150,19 @@
 
         <div class="row">
 
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("{{asset('img/slide/slide-1.jpg')}}");'>
-            <a href=""></a>
-            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
+          <div class="col-lg-5 align-items-stretch video-box" style="background: url('{{asset('img/about.jpg')}}');">
+            
           </div>
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
-
+          @foreach($post_detail as $key=>$value)
             <div class="content">
-              <h3>Artikel <strong>1</strong></h3>
+              <h3>{{$value->title}} <strong>1</strong></h3>
+              <h6>Author: {{$value->author}}</h6>
               <p>
-                CAHAYA BANGUN MAJUJAYA merupakan perusahaan yang bergerak di bidang
-                pengelolaan tambak yang berlokasi di Kampung Singkil, Desa Pantai Mekar,
-                Kabupaten Bekasi, Muara Gembong. <br></br>Pengalaman menekuni pengelolaan bidang
-                usaha tambak udang sejak tahun 2014 telah memberikan banyak pelajaran berharga
-                untuk senantiasa meningkatkan profesionalisme usaha dalam hal peningkatan
-                manajemen usaha.<br></br>
-                Legalitas kami adalah CV Cahaya Bangun Majujaya pada tgl. 21 Maret 2019, Fokus
-                produk kami adalah seafood yang fresh & organic.
-                CAHAYA BANGUN MAJUJAYA merupakan perusahaan yang bergerak di bidang
-                pengelolaan tambak yang berlokasi di Kampung Singkil, Desa Pantai Mekar,
-                Kabupaten Bekasi, Muara Gembong. <br></br>Pengalaman menekuni pengelolaan bidang
-                usaha tambak udang sejak tahun 2014 telah memberikan banyak pelajaran berharga
-                untuk senantiasa meningkatkan profesionalisme usaha dalam hal peningkatan
-                manajemen usaha.<br></br>
-                Legalitas kami adalah CV Cahaya Bangun Majujaya pada tgl. 21 Maret 2019, Fokus
-                produk kami adalah seafood yang fresh & organic.
-                CAHAYA BANGUN MAJUJAYA merupakan perusahaan yang bergerak di bidang
-                pengelolaan tambak yang berlokasi di Kampung Singkil, Desa Pantai Mekar,
-                Kabupaten Bekasi, Muara Gembong. <br></br>Pengalaman menekuni pengelolaan bidang
-                usaha tambak udang sejak tahun 2014 telah memberikan banyak pelajaran berharga
-                untuk senantiasa meningkatkan profesionalisme usaha dalam hal peningkatan
-                manajemen usaha.<br></br>
-                Legalitas kami adalah CV Cahaya Bangun Majujaya pada tgl. 21 Maret 2019, Fokus
-                produk kami adalah seafood yang fresh & organic.
-
+                {{$value->isi}}
               </p>
+            @endforeach
             <!--   <p class="font-italic">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua.

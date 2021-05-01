@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\resep;
 use Illuminate\Http\Request;
-use App\post;
-class post_controller extends Controller
+
+class resep_controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,17 +14,16 @@ class post_controller extends Controller
      */
     public function index()
     {
-        $post = post::all();
+        $resep = resep::all();
         // return $posts;
-        return view('blog', ['post' => $post]);
+        return view('resep', ['resep' => $resep]);
     }
 
-    public function detail_blog($id)
+    public function detail_resep($id)
     {
-        $post_detail = post::where('id',$id)->get();
-        return view('detailblog', ['post_detail' => $post_detail]);
+        $resep_detail = resep::where('id',$id)->get();
+        return view('detailresep', ['resep_detail' => $resep_detail]);
     }
-
     /**
      * Show the form for creating a new resource.
      *
