@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/blog', 'post_controller@index')->name('blogs');
 
@@ -38,6 +36,6 @@ Route::get('/resep1', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('home');
 });
