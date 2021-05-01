@@ -25,3 +25,12 @@ Route::get('/produk', 'product_controller@index');
 Route::get('/tentang', function () {
     return view('tentang');
 });
+Route::get('/blog1', function () {
+    return view('detailblog');
+});
+Route::get('/resep', function () {
+    return view('resep');
+});
+Route::get('/resep1', function () {
+    return view('detailresep');
+});

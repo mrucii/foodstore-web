@@ -144,46 +144,69 @@
 
   <main id="main">
 
-    <section id="events" class="why-us">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Artikel <span>Cahaya Seafood</span></h2>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-        </div>
+    <!-- ======= blog Section ======= -->
+    <section id="events" class="blog">
+      <div class="container-fluid">
 
         <div class="row">
-        @foreach($post as $key=>$value)
-          <div class="col-lg-4">
-            <div class="box">
-              
-              <img src="{{asset('img/event-birthday.jpg')}}" class="img-fluid" alt="">
-              <h4>{{$value->title}}</h4>
-              <h6>{{$value->created_at}} - {{$value->author}}</h6>
-              <p>{{$value->isi}}<br></br>
-              <a href="#">Read more</a></p>
-            </div>
+
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
-        @endforeach
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+            <div class="content">
+              <h3>Artikel <strong>1</strong></h3>
+              <p>
+                CAHAYA BANGUN MAJUJAYA merupakan perusahaan yang bergerak di bidang
+                pengelolaan tambak yang berlokasi di Kampung Singkil, Desa Pantai Mekar,
+                Kabupaten Bekasi, Muara Gembong. <br></br>Pengalaman menekuni pengelolaan bidang
+                usaha tambak udang sejak tahun 2014 telah memberikan banyak pelajaran berharga
+                untuk senantiasa meningkatkan profesionalisme usaha dalam hal peningkatan
+                manajemen usaha.<br></br>
+                Legalitas kami adalah CV Cahaya Bangun Majujaya pada tgl. 21 Maret 2019, Fokus
+                produk kami adalah seafood yang fresh & organic.
+                CAHAYA BANGUN MAJUJAYA merupakan perusahaan yang bergerak di bidang
+                pengelolaan tambak yang berlokasi di Kampung Singkil, Desa Pantai Mekar,
+                Kabupaten Bekasi, Muara Gembong. <br></br>Pengalaman menekuni pengelolaan bidang
+                usaha tambak udang sejak tahun 2014 telah memberikan banyak pelajaran berharga
+                untuk senantiasa meningkatkan profesionalisme usaha dalam hal peningkatan
+                manajemen usaha.<br></br>
+                Legalitas kami adalah CV Cahaya Bangun Majujaya pada tgl. 21 Maret 2019, Fokus
+                produk kami adalah seafood yang fresh & organic.
+                CAHAYA BANGUN MAJUJAYA merupakan perusahaan yang bergerak di bidang
+                pengelolaan tambak yang berlokasi di Kampung Singkil, Desa Pantai Mekar,
+                Kabupaten Bekasi, Muara Gembong. <br></br>Pengalaman menekuni pengelolaan bidang
+                usaha tambak udang sejak tahun 2014 telah memberikan banyak pelajaran berharga
+                untuk senantiasa meningkatkan profesionalisme usaha dalam hal peningkatan
+                manajemen usaha.<br></br>
+                Legalitas kami adalah CV Cahaya Bangun Majujaya pada tgl. 21 Maret 2019, Fokus
+                produk kami adalah seafood yang fresh & organic.
+
+              </p>
+            <!--   <p class="font-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum
+              </p> -->
+            </div>
+
+          </div>
 
         </div>
-        <div class="row text-center">
-                    <div class="text-center">
-                        <div class="pagination text-center">
-                            <ul>
-                                <li><a href="javascript:void(0)">1</a></li>
-                                <li><a href="javascript:void(0)" class="active">2</a></li>
-                                <li><a href="javascript:void(0)">3</a></li>
-                                <li><a href="javascript:void(0)">4</a></li>
-                                <li><a href="javascript:void(0)">...</a></li>
-                                <li><a href="javascript:void(0)">11</a></li>
-                            </ul>
-                        </div> <!-- /.pagination -->
-                    </div> <!-- /.col-md-12 -->
-                </div> <!-- /.row -->
 
       </div>
-    </section><!-- End Whu Us Section -->
+    </section><!-- End About Section -->
 
   </main><!-- End #main -->
 
