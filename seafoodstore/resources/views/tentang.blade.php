@@ -24,6 +24,8 @@
   <link href="{{asset('vendor/venobox/venobox.css')}}" rel="stylesheet">
   <link href="{{asset('vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
   <!-- Template Main CSS File -->
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
@@ -157,7 +159,7 @@
 
             <div class="content">
               <h3>Tentang <strong>Kami</strong></h3>
-              <p>
+              <p style="text-align: justify;">
                 CAHAYA BANGUN MAJUJAYA merupakan perusahaan yang bergerak di bidang
                 pengelolaan tambak yang berlokasi di Kampung Singkil, Desa Pantai Mekar,
                 Kabupaten Bekasi, Muara Gembong. <br></br>Pengalaman menekuni pengelolaan bidang
@@ -222,11 +224,11 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Visi</h3>
-                    <p class="font-italic">Menjadi pengelola dan supplier seafood yang unggul, terkemuka
+                    <p style="text-align: justify;" class="font-italic">Menjadi pengelola dan supplier seafood yang unggul, terkemuka
                     dan terdepan dalam pelayanan, kinerja serta menjadi wadah
                     pencetakan pengusaha baru.</p>
                     <h3>Misi</h3>
-                    <p class="font-italic">Menjadi pengelola dan supplier seafood yang unggul, terkemuka
+                    <p style="text-align: justify;" class="font-italic">Menjadi pengelola dan supplier seafood yang unggul, terkemuka
                     dan terdepan dalam pelayanan, kinerja serta menjadi wadah
                     pencetakan pengusaha baru.</p>
                   </div>
@@ -239,11 +241,11 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Tujuan Kami</h3>
-                    <p class="font-italic">Dengan berbekal pengetahuan, pengalaman dan sasaran, kami memfokuskan
+                    <p style="text-align: justify;" class="font-italic">Dengan berbekal pengetahuan, pengalaman dan sasaran, kami memfokuskan
                       diri untuk menjadi pengelola dan supplier seafood yang ber-orentasi pada
                       kepuasan pelanggan.<br></br>
                       <h4>Peningkatan akan kami fokuskan 3 solusi utama :</h4>
-                                <ul>
+                                <ul style="text-align: justify;">
                                         <li><b>System</b> solusi dengan continous improvement dalam hal system dan SDM melalui pemahaman system pada customer secara nyata dan pendekatan diskusi, Edukasi dengan melibatkan tim manajemen dan pekerja berpengalaman secara efektif guna meningkatkan kualitas layanan dan kualitas produk. </li>
                                         <li><b>Sharing</b> solusi dengan membuka diskusi guna memberi masukan atau berdiskusi dalam masukan dari mitra pengelola, mitra pemasaran dan konsumen. </li>
                                         <li><b>Partner</b> Solusi dengan menjalin kemitraan usaha dalam hal pemasaran dan pemodalan usaha dengan prinsif saling menguntungkan. </li>
@@ -259,11 +261,11 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Strategi Pengembangan</h3>
-                    <p class="font-italic">Kami menyadari bahwa dalam
+                    <p style="text-align: justify;" class="font-italic">Kami menyadari bahwa dalam
                                         mengembangkan produk memerlukan strategi
                                         pemasaran. Yang kami sebut 3 (tiga strategi)
                                         yang sesuai dengan misi kami yaitu :<br></br>
-                                <ul>
+                                <ul style="text-align: justify;">
                                         <li><b>Produk</b> solusi dengan continous improvement dalam hal system dan SDM melalui pemahaman system pada customer secara nyata dan pendekatan diskusi, Edukasi dengan melibatkan tim manajemen dan pekerja berpengalaman secara efektif guna meningkatkan kualitas layanan dan kualitas produk. </li>
                                         <li><b>Harga</b> solusi dengan membuka diskusi guna memberi masukan atau berdiskusi dalam masukan dari mitra pengelola, mitra pemasaran dan konsumen. </li>
                                         <li><b>Delivery</b> Solusi dengan menjalin kemitraan usaha dalam hal pemasaran dan pemodalan usaha dengan prinsif saling menguntungkan. </li>
@@ -280,10 +282,10 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Pengembangan Sumber Daya Manusia</h3>
-                    <p class="font-italic">Dengan pengelolaan SDM yang baik dan disertai dengan <b>system continues
+                    <p style="text-align: justify;" class="font-italic">Dengan pengelolaan SDM yang baik dan disertai dengan <b>system continues
                                           improvement</b>, kami mampu memberikan layanan dan solusi yang terbaik bagi mitra
                                           dan costumer.<br></br>
-                                <p class="font-italic">Memiliki SDM yang baik merupakan sebuah investasi untuk perusahaan dalam
+                                <p style="text-align: justify;" class="font-italic">Memiliki SDM yang baik merupakan sebuah investasi untuk perusahaan dalam
                                 menjalankan proses bisnis. Dengan kontrol yang baik akan menghasilkan produk yang
                                 berkualitas</p>
                     </p>
@@ -322,7 +324,7 @@
                 orang bagian <b>quality control</b>, 1 orang marketing offline, 1 orang bagian
                 marketing online, 1 orang bagian <b>delivery</b> / distribusi produk.<br></br>
                 </p>
-                <p>
+                <p style="text-align: justify;">
                 Untuk menjamin kemampuan pengelolaan dan panen dengan kualitas terbaik.
                 <b>CV Cahaya Bangun Majujaya memiliki lokasi tambak yang sangat strategis</b> di
                 wilayah muara gembong yang menuju ke laut dengan kadar garam 10 s.d. 25
@@ -350,7 +352,7 @@
             <div class="content">
 
                 <h3>Distribusi <strong>Produk</strong></h3>
-                <p>
+                <p style="text-align: justify;">
                 Distribusi produk di lakukan dua
                 kali dalam satu minggu, yaitu pada
                 hari <b>Rabu dan Sabtu secara regular</b>
@@ -457,7 +459,10 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
+  <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>

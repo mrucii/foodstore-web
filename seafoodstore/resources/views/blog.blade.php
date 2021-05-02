@@ -24,6 +24,8 @@
   <link href="{{asset('vendor/venobox/venobox.css')}}" rel="stylesheet">
   <link href="{{asset('vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
   <!-- Template Main CSS File -->
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
@@ -160,7 +162,7 @@
               <img src="{{asset('img/event-birthday.jpg')}}" class="img-fluid" alt="">
               <h4>{{$value->title}}</h4>
               <h6>{{$value->created_at}} - {{$value->author}}</h6>
-              <p>{{\Illuminate\Support\Str::limit($value->isi, 25, $end='...')}}<br></br>
+              <p style="text-align: justify;">{{\Illuminate\Support\Str::limit($value->isi, 25, $end='...')}}<br></br>
               <a href="{{route('blog_details', ['id' => $value->id])}}">Read more</a></p>
             </div>
           </div>
@@ -212,7 +214,10 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
+  <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>

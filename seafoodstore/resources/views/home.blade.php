@@ -18,12 +18,14 @@
 
   <!-- Vendor CSS Files -->
   <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{asset('vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+  <!-- <link href="{{asset('vendor/icofont/icofont.min.css')}}" rel="stylesheet"> -->
   <link href="{{asset('vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
   <link href="{{asset('vendor/animate.css/animate.min.css')}}" rel="stylesheet">
   <link href="{{asset('vendor/venobox/venobox.css')}}" rel="stylesheet">
   <link href="{{asset('vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ 
   <!-- Template Main CSS File -->
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
@@ -157,7 +159,7 @@
 
             <div class="content">
               <h3>Tentang <strong>Kami</strong></h3>
-              <p>
+              <p style="text-align: justify;">
                 CAHAYA BANGUN MAJUJAYA merupakan perusahaan yang bergerak di bidang
                 pengelolaan tambak yang berlokasi di Kampung Singkil, Desa Pantai Mekar,
                 Kabupaten Bekasi, Muara Gembong. <br></br>Pengalaman menekuni pengelolaan bidang
@@ -628,7 +630,10 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
+  <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
