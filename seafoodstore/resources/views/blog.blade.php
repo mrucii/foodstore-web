@@ -162,7 +162,7 @@
               <img src="{{asset('img/event-birthday.jpg')}}" class="img-fluid" alt="">
               <h4>{{$value->title}}</h4>
               <h6>{{$value->created_at}} - {{$value->author}}</h6>
-              <p>{{\Illuminate\Support\Str::limit($value->isi, 25, $end='...')}}<br></br>
+              <p style="text-align: justify;">{{\Illuminate\Support\Str::limit($value->isi, 25, $end='...')}}<br></br>
               <a href="{{route('blog_details', ['id' => $value->id])}}">Read more</a></p>
             </div>
           </div>

@@ -159,7 +159,7 @@
 
             <div class="content">
               <h3>Tentang <strong>Kami</strong></h3>
-              <p>
+              <p style="text-align: justify;">
                 CAHAYA BANGUN MAJUJAYA merupakan perusahaan yang bergerak di bidang
                 pengelolaan tambak yang berlokasi di Kampung Singkil, Desa Pantai Mekar,
                 Kabupaten Bekasi, Muara Gembong. <br></br>Pengalaman menekuni pengelolaan bidang

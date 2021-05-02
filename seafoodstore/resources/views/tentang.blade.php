@@ -159,7 +159,7 @@
 
             <div class="content">
               <h3>Tentang <strong>Kami</strong></h3>
-              <p>
+              <p style="text-align: justify;">
                 CAHAYA BANGUN MAJUJAYA merupakan perusahaan yang bergerak di bidang
                 pengelolaan tambak yang berlokasi di Kampung Singkil, Desa Pantai Mekar,
                 Kabupaten Bekasi, Muara Gembong. <br></br>Pengalaman menekuni pengelolaan bidang
@@ -224,11 +224,11 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Visi</h3>
-                    <p class="font-italic">Menjadi pengelola dan supplier seafood yang unggul, terkemuka
+                    <p style="text-align: justify;" class="font-italic">Menjadi pengelola dan supplier seafood yang unggul, terkemuka
                     dan terdepan dalam pelayanan, kinerja serta menjadi wadah
                     pencetakan pengusaha baru.</p>
                     <h3>Misi</h3>
-                    <p class="font-italic">Menjadi pengelola dan supplier seafood yang unggul, terkemuka
+                    <p style="text-align: justify;" class="font-italic">Menjadi pengelola dan supplier seafood yang unggul, terkemuka
                     dan terdepan dalam pelayanan, kinerja serta menjadi wadah
                     pencetakan pengusaha baru.</p>
                   </div>
@@ -241,11 +241,11 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Tujuan Kami</h3>
-                    <p class="font-italic">Dengan berbekal pengetahuan, pengalaman dan sasaran, kami memfokuskan
+                    <p style="text-align: justify;" class="font-italic">Dengan berbekal pengetahuan, pengalaman dan sasaran, kami memfokuskan
                       diri untuk menjadi pengelola dan supplier seafood yang ber-orentasi pada
                       kepuasan pelanggan.<br></br>
                       <h4>Peningkatan akan kami fokuskan 3 solusi utama :</h4>
-                                <ul>
+                                <ul style="text-align: justify;">
                                         <li><b>System</b> solusi dengan continous improvement dalam hal system dan SDM melalui pemahaman system pada customer secara nyata dan pendekatan diskusi, Edukasi dengan melibatkan tim manajemen dan pekerja berpengalaman secara efektif guna meningkatkan kualitas layanan dan kualitas produk. </li>
                                         <li><b>Sharing</b> solusi dengan membuka diskusi guna memberi masukan atau berdiskusi dalam masukan dari mitra pengelola, mitra pemasaran dan konsumen. </li>
                                         <li><b>Partner</b> Solusi dengan menjalin kemitraan usaha dalam hal pemasaran dan pemodalan usaha dengan prinsif saling menguntungkan. </li>
@@ -261,11 +261,11 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Strategi Pengembangan</h3>
-                    <p class="font-italic">Kami menyadari bahwa dalam
+                    <p style="text-align: justify;" class="font-italic">Kami menyadari bahwa dalam
                                         mengembangkan produk memerlukan strategi
                                         pemasaran. Yang kami sebut 3 (tiga strategi)
                                         yang sesuai dengan misi kami yaitu :<br></br>
-                                <ul>
+                                <ul style="text-align: justify;">
                                         <li><b>Produk</b> solusi dengan continous improvement dalam hal system dan SDM melalui pemahaman system pada customer secara nyata dan pendekatan diskusi, Edukasi dengan melibatkan tim manajemen dan pekerja berpengalaman secara efektif guna meningkatkan kualitas layanan dan kualitas produk. </li>
                                         <li><b>Harga</b> solusi dengan membuka diskusi guna memberi masukan atau berdiskusi dalam masukan dari mitra pengelola, mitra pemasaran dan konsumen. </li>
                                         <li><b>Delivery</b> Solusi dengan menjalin kemitraan usaha dalam hal pemasaran dan pemodalan usaha dengan prinsif saling menguntungkan. </li>
@@ -282,10 +282,10 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Pengembangan Sumber Daya Manusia</h3>
-                    <p class="font-italic">Dengan pengelolaan SDM yang baik dan disertai dengan <b>system continues
+                    <p style="text-align: justify;" class="font-italic">Dengan pengelolaan SDM yang baik dan disertai dengan <b>system continues
                                           improvement</b>, kami mampu memberikan layanan dan solusi yang terbaik bagi mitra
                                           dan costumer.<br></br>
-                                <p class="font-italic">Memiliki SDM yang baik merupakan sebuah investasi untuk perusahaan dalam
+                                <p style="text-align: justify;" class="font-italic">Memiliki SDM yang baik merupakan sebuah investasi untuk perusahaan dalam
                                 menjalankan proses bisnis. Dengan kontrol yang baik akan menghasilkan produk yang
                                 berkualitas</p>
                     </p>
@@ -316,7 +316,7 @@
 
             <div class="content">
               <h3>Pengelolaan <strong>Tambak</strong></h3>
-              <p>
+              <p style="text-align: justify;">
                 Bergerak di bidang pengelolaan tambak dengan luas 26 Ha dengan
                 menggunakan metode Tradisional, <b>CV Cahaya Bangun Majujaya di dukung
                 oleh 20 puluh pekerja (mitra kerja)</b>, 6 mitra manajemen terdiri dari 1 orang
@@ -324,7 +324,7 @@
                 orang bagian <b>quality control</b>, 1 orang marketing offline, 1 orang bagian
                 marketing online, 1 orang bagian <b>delivery</b> / distribusi produk.<br></br>
                 </p>
-                <p>
+                <p style="text-align: justify;">
                 Untuk menjamin kemampuan pengelolaan dan panen dengan kualitas terbaik.
                 <b>CV Cahaya Bangun Majujaya memiliki lokasi tambak yang sangat strategis</b> di
                 wilayah muara gembong yang menuju ke laut dengan kadar garam 10 s.d. 25
@@ -352,7 +352,7 @@
             <div class="content">
 
                 <h3>Distribusi <strong>Produk</strong></h3>
-                <p>
+                <p style="text-align: justify;">
                 Distribusi produk di lakukan dua
                 kali dalam satu minggu, yaitu pada
                 hari <b>Rabu dan Sabtu secara regular</b>

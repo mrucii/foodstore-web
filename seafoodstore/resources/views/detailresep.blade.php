@@ -160,7 +160,7 @@
 
             <div class="content">
               <h3>{{$value->nama}}</h3>
-              <p>
+              <p style="text-align: justify;">
                 {{$value->isi}}
               </p>
             <!--   <p class="font-italic">

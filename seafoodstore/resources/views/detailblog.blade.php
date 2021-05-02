@@ -161,7 +161,7 @@
             <div class="content">
               <h3>{{$value->title}} <strong>1</strong></h3>
               <h6>Author: {{$value->author}}</h6>
-              <p>
+              <p style="text-align: justify;">
                 {{$value->isi}}
               </p>
             @endforeach
