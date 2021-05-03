@@ -26,6 +26,8 @@ Route::get('/resep', 'resep_controller@index')->name('reseps');
 
 Route::get('/resep/{id}', 'resep_controller@detail_resep')-> name('resep_details');
 
+Route::get('/', 'jproduk_controller@index')->name('get_jenis_produk');
+
 Route::get('/tentang', function () {
     return view('tentang');
 })->name('tentang');
@@ -35,7 +37,4 @@ Route::get('/resep1', function () {
 });
 Route::get('/contact', function () {
     return view('contact');
-});
-Route::get('/', function () {
-    return view('home');
 });
