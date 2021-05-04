@@ -386,15 +386,13 @@
             <div class="col-lg-6 pt-4 pt-lg-0 content">
               <h3>KEMASAN MINI (1-5 KG)</h3>
               <div class="price">
-                <p><span>$189</span></p>
+                <p><span><br></span></p>
               </div>
               <p class="font-italic">
                 Untuk pengriman per kg menggunakan tempat box plastik dan Es batu.
               </p>
               <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                
               </ul>
               <p>
                 Tujuan dari packaging tersebut untuk menjaga produk tetap "FRESH"
@@ -410,15 +408,13 @@
             <div class="col-lg-6 pt-4 pt-lg-0 content">
               <h3>KEMASAN BESAR ( > 5KG)</h3>
               <div class="price">
-                <p><span>$290</span></p>
+                <p><span><br></span></p>
               </div>
               <p class="font-italic">
                 Untuk pengriman lebih dari 5 kg menggunakan coller box dan Es batu.
               </p>
               <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                
               </ul>
               <p>
                 Tujuan dari packaging tersebut untuk menjaga produk tetap <b>FRESH</b>
