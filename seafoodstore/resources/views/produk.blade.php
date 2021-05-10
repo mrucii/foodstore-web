@@ -169,88 +169,36 @@
         </div>
 
   <ul class="cd-items cd-container">
+  @foreach($product as $key=>$value)
     <li class="cd-item">
-      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
+    <a href="#0" class="cd-trigger" data-nama="{{$value->nama_product}}" data-deskripsi="{{$value->deskripsi}}" data-isi="{{$value->isi}}" data-photo_1="{{asset('img/gallery/'. $value->gambar_1)}}" data-photo_2="{{asset('img/gallery/'. $value->gambar_2)}}" data-photo_3="{{asset('img/gallery/'. $value->gambar_3)}}">Quick View</a>
+      <img src="{{asset('img/gallery/'. $value->gambar_1)}}" alt="Item Preview">
+      
     </li> <!-- cd-item -->
-
-    <li class="cd-item">
-      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
-
-    <li class="cd-item">
-      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
-
-    <li class="cd-item">
-      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
-
-    <li class="cd-item">
-      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
-
-    <li class="cd-item">
-      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
-
-    <li class="cd-item">
-      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
-
-    <li class="cd-item">
-      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
-
-    <li class="cd-item">
-      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
-
-    <li class="cd-item">
-      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
-
-    <li class="cd-item">
-      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
-
-    <li class="cd-item">
-      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
+  @endforeach
   </ul> <!-- cd-items -->
-
+  
   <div class="cd-quick-view">
     <div class="cd-slider-wrapper">
       <ul class="cd-slider">
-        <li class="selected"><img src="{{asset('img/item-1.jpg')}}" alt="Product 1"></li>
-        <li><img src="{{asset('img/item-2.jpg')}}" alt="Product 2"></li>
-        <li><img src="{{asset('img/item-3.jpg')}}" alt="Product 3"></li>
+        <li id="gambar_1" class="selected"></li>
+        <li id="gambar_2"></li>
+        <li id="gambar_3"></li>
       </ul> <!-- cd-slider -->
-
+    
       <ul class="cd-slider-navigation">
         <li><a class="cd-next" href="#0">Prev</a></li>
         <li><a class="cd-prev" href="#0">Next</a></li>
       </ul> <!-- cd-slider-navigation -->
     </div> <!-- cd-slider-wrapper -->
 
-    <div class="cd-item-info">
-      <h2>Produt Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+    <div id="info" class="cd-item-info">
+      <h2 id="title_p"></h2>
+      <h2 id="isi" style="padding-top: 1em;"></h2>
+      <p id="desc"></p>
 
       <ul class="cd-item-action">
         <li><button class="add-to-cart">Add to cart</button></li>         
-        <li><a href="#0">Learn more</a></li>  
       </ul> <!-- cd-item-action -->
     </div> <!-- cd-item-info -->
     <a href="#0" class="cd-close">Close</a>
@@ -350,6 +298,7 @@
   <i class="fa fa-whatsapp my-float"></i>
   </a>  
   <!-- Vendor JS Files -->
+  <script src="{{asset('js/jquery-2.1.1.js')}}"></script>
   <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
   <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <script src="{{asset('vendor/jquery.easing/jquery.easing.min.js')}}"></script>
@@ -365,8 +314,7 @@
   <script src="{{asset('js/modal.js')}}"></script>
   
   <script src="{{asset('js/velocity.min.js')}}"></script>
-  <script src="{{asset('js/jquery-2.1.1.js')}}"></script>
-
+  
   
 
 </body>

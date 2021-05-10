@@ -1,14 +1,20 @@
 jQuery(document).ready(function($){
   //final width --> this is the quick view image slider width
   //maxQuickWidth --> this is the max-width of the quick-view panel
-  var sliderFinalWidth = 400,
-    maxQuickWidth = 900;
+  var sliderFinalWidth = 600,
+    maxQuickWidth = 1200;
 
   //open the quick view panel
   $('.cd-trigger').on('click', function(event){
     var selectedImage = $(this).parent('.cd-item').children('img'),
       slectedImageUrl = selectedImage.attr('src');
-
+    $('#gambar_1').html('<img src="' + $(this).data('photo_1') + '"/>')
+    $('#gambar_2').html('<img src="' + $(this).data('photo_2') + '"/>')
+    $('#gambar_3').html('<img src="' + $(this).data('photo_3') + '"/>')
+    // $('#info').html('<h2> '+ $(this).data('nama') + "</h2>" + '<p> '+  "<p><span> " + $(this).data('isi') + " Ekor </span></p>" + $(this).data('deskripsi') + "</p>")
+    $('#desc').html($(this).data('deskripsi'));
+    $('#title_p').html($(this).data('nama'));
+    $('#isi').html($(this).data('isi')+ " Ekor/KG");
     $('body').addClass('overlay-layer');
     animateQuickView(selectedImage, sliderFinalWidth, maxQuickWidth, 'open');
 
