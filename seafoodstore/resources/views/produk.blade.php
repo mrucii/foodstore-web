@@ -24,10 +24,15 @@
   <link href="{{asset('vendor/venobox/venobox.css')}}" rel="stylesheet">
   <link href="{{asset('vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
 
   <!-- Template Main CSS File -->
+  <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+  <script src="{{asset('js/modernizr.js')}}"></script>
+  <script src="{{asset('js/main.js')}}"></script>
+  <script src="{{asset('js/modal.js')}}"></script>
+  
 
   <!-- =======================================================
   * Template Name: Delicious - v2.2.1
@@ -144,99 +149,6 @@
   </section><!-- End Hero -->
 
   <main id="main">
-
-     <!-- ======= Events Section ======= -->
-    <section id="menu" class="events">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Produk <span>Kami</span> Cahaya Seafood</h2>
-        </div>
-
-        <div class="owl-carousel events-carousel">
-
-          <div class="row event-item">
-            <div class="col-lg-6">
-              <img src="{{asset('img/event-birthday.jpg')}}" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Birthday Parties</h3>
-              <div class="price">
-                <p><span>$189</span></p>
-              </div>
-              <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur
-              </p>
-            </div>
-          </div>
-
-          <div class="row event-item">
-            <div class="col-lg-6">
-              <img src="{{asset('img/event-private.jpg')}}" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Private Parties</h3>
-              <div class="price">
-                <p><span>$290</span></p>
-              </div>
-              <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur
-              </p>
-            </div>
-          </div>
-
-          <div class="row event-item">
-            <div class="col-lg-6">
-              <img src="{{asset('img/event-custom.jpg')}}" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Custom Parties</h3>
-              <div class="price">
-                <p><span>$99</span></p>
-              </div>
-              <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Events Section -->
-
-
-
     <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu">
       <div class="container">
@@ -256,7 +168,96 @@
           </div>
         </div>
 
-        <div class="row menu-container">
+  <ul class="cd-items cd-container">
+    <li class="cd-item">
+      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
+      <a href="#0" class="cd-trigger">Quick View</a>
+    </li> <!-- cd-item -->
+
+    <li class="cd-item">
+      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
+      <a href="#0" class="cd-trigger">Quick View</a>
+    </li> <!-- cd-item -->
+
+    <li class="cd-item">
+      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
+      <a href="#0" class="cd-trigger">Quick View</a>
+    </li> <!-- cd-item -->
+
+    <li class="cd-item">
+      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
+      <a href="#0" class="cd-trigger">Quick View</a>
+    </li> <!-- cd-item -->
+
+    <li class="cd-item">
+      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
+      <a href="#0" class="cd-trigger">Quick View</a>
+    </li> <!-- cd-item -->
+
+    <li class="cd-item">
+      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
+      <a href="#0" class="cd-trigger">Quick View</a>
+    </li> <!-- cd-item -->
+
+    <li class="cd-item">
+      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
+      <a href="#0" class="cd-trigger">Quick View</a>
+    </li> <!-- cd-item -->
+
+    <li class="cd-item">
+      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
+      <a href="#0" class="cd-trigger">Quick View</a>
+    </li> <!-- cd-item -->
+
+    <li class="cd-item">
+      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
+      <a href="#0" class="cd-trigger">Quick View</a>
+    </li> <!-- cd-item -->
+
+    <li class="cd-item">
+      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
+      <a href="#0" class="cd-trigger">Quick View</a>
+    </li> <!-- cd-item -->
+
+    <li class="cd-item">
+      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
+      <a href="#0" class="cd-trigger">Quick View</a>
+    </li> <!-- cd-item -->
+
+    <li class="cd-item">
+      <img src="{{asset('img/item-1.jpg')}}" alt="Item Preview">
+      <a href="#0" class="cd-trigger">Quick View</a>
+    </li> <!-- cd-item -->
+  </ul> <!-- cd-items -->
+
+  <div class="cd-quick-view">
+    <div class="cd-slider-wrapper">
+      <ul class="cd-slider">
+        <li class="selected"><img src="{{asset('img/item-1.jpg')}}" alt="Product 1"></li>
+        <li><img src="{{asset('img/item-2.jpg')}}" alt="Product 2"></li>
+        <li><img src="{{asset('img/item-3.jpg')}}" alt="Product 3"></li>
+      </ul> <!-- cd-slider -->
+
+      <ul class="cd-slider-navigation">
+        <li><a class="cd-next" href="#0">Prev</a></li>
+        <li><a class="cd-prev" href="#0">Next</a></li>
+      </ul> <!-- cd-slider-navigation -->
+    </div> <!-- cd-slider-wrapper -->
+
+    <div class="cd-item-info">
+      <h2>Produt Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+      <ul class="cd-item-action">
+        <li><button class="add-to-cart">Add to cart</button></li>         
+        <li><a href="#0">Learn more</a></li>  
+      </ul> <!-- cd-item-action -->
+    </div> <!-- cd-item-info -->
+    <a href="#0" class="cd-close">Close</a>
+  </div> <!-- cd-quick-view -->
+
+
+        <!-- <div class="row menu-container">
         @foreach($product as $key=>$value)
           @if($value->jenis == 'ikan')
           <div class="col-lg-6 menu-item filter-starters">
@@ -277,7 +278,7 @@
             </div>
           </div>
           @endif
-        @endforeach
+        @endforeach -->
 
         </div>
 
@@ -316,6 +317,7 @@
       </div>
     </section><!-- End Gallery Section -->
 
+       
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -358,7 +360,14 @@
   <script src="{{asset('vendor/owl.carousel/owl.carousel.min.js')}}"></script>
 
   <!-- Template Main JS File -->
+  <script src="{{asset('js/modernizr.js')}}"></script>
   <script src="{{asset('js/main.js')}}"></script>
+  <script src="{{asset('js/modal.js')}}"></script>
+  
+  <script src="{{asset('js/velocity.min.js')}}"></script>
+  <script src="{{asset('js/jquery-2.1.1.js')}}"></script>
+
+  
 
 </body>
 
