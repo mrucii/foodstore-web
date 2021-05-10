@@ -1,8 +1,8 @@
 jQuery(document).ready(function($){
   //final width --> this is the quick view image slider width
   //maxQuickWidth --> this is the max-width of the quick-view panel
-  var sliderFinalWidth = 600,
-    maxQuickWidth = 1200;
+  var sliderFinalWidth = 400,
+    maxQuickWidth = 900;
 
   //open the quick view panel
   $('.cd-trigger').on('click', function(event){

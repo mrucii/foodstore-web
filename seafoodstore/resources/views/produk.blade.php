@@ -32,7 +32,7 @@
   <script src="{{asset('js/modernizr.js')}}"></script>
   <script src="{{asset('js/main.js')}}"></script>
   <script src="{{asset('js/modal.js')}}"></script>
-  
+
 
   <!-- =======================================================
   * Template Name: Delicious - v2.2.1
@@ -163,46 +163,57 @@
               <li data-filter="*" class="filter-active">Show All</li>
               <li data-filter=".filter-starters">Ikan</li>
               <li data-filter=".filter-salads">Udang</li>
-             <!--  <li data-filter=".filter-specialty">Specialty</li> -->
+              <!--  <li data-filter=".filter-specialty">Specialty</li> -->
             </ul>
           </div>
         </div>
 
-  <ul class="cd-items cd-container">
-  @foreach($product as $key=>$value)
-    <li class="cd-item">
-    <a href="#0" class="cd-trigger" data-nama="{{$value->nama_product}}" data-deskripsi="{{$value->deskripsi}}" data-isi="{{$value->isi}}" data-photo_1="{{asset('img/gallery/'. $value->gambar_1)}}" data-photo_2="{{asset('img/gallery/'. $value->gambar_2)}}" data-photo_3="{{asset('img/gallery/'. $value->gambar_3)}}">Quick View</a>
-      <img src="{{asset('img/gallery/'. $value->gambar_1)}}" alt="Item Preview">
-      
-    </li> <!-- cd-item -->
-  @endforeach
-  </ul> <!-- cd-items -->
-  
-  <div class="cd-quick-view">
-    <div class="cd-slider-wrapper">
-      <ul class="cd-slider">
-        <li id="gambar_1" class="selected"></li>
-        <li id="gambar_2"></li>
-        <li id="gambar_3"></li>
-      </ul> <!-- cd-slider -->
-    
-      <ul class="cd-slider-navigation">
-        <li><a class="cd-next" href="#0">Prev</a></li>
-        <li><a class="cd-prev" href="#0">Next</a></li>
-      </ul> <!-- cd-slider-navigation -->
-    </div> <!-- cd-slider-wrapper -->
+        <ul class="cd-items cd-container">
+          <div class="menu-container">
+            @foreach($product as $key=>$value)
+            @if($value->jenis == 'ikan')
+            <li class="cd-item menu-item filter-starters">
+              <a href="#0" class="cd-trigger" data-nama="{{$value->nama_product}}" data-deskripsi="{{$value->deskripsi}}" data-isi="{{$value->isi}}" data-photo_1="{{asset('img/gallery/'. $value->gambar_1)}}" data-photo_2="{{asset('img/gallery/'. $value->gambar_2)}}" data-photo_3="{{asset('img/gallery/'. $value->gambar_3)}}">{{$value->nama_product}}</a>
+              <img src="{{asset('img/gallery/'. $value->gambar_1)}}" alt="Item Preview">
+            </li> <!-- cd-item -->
+            @else
 
-    <div id="info" class="cd-item-info">
-      <h2 id="title_p"></h2>
-      <h2 id="isi" style="padding-top: 1em;"></h2>
-      <p id="desc"></p>
+            <li class="cd-item menu-item filter-salads">
+              <a href="#0" class="cd-trigger" data-nama="{{$value->nama_product}}" data-deskripsi="{{$value->deskripsi}}" data-isi="{{$value->isi}}" data-photo_1="{{asset('img/gallery/'. $value->gambar_1)}}" data-photo_2="{{asset('img/gallery/'. $value->gambar_2)}}" data-photo_3="{{asset('img/gallery/'. $value->gambar_3)}}">{{$value->nama_product}}</a>
+              <img src="{{asset('img/gallery/'. $value->gambar_1)}}" alt="Item Preview">
+            </li> <!-- cd-item -->
 
-      <ul class="cd-item-action">
-        <li><button class="add-to-cart">Add to cart</button></li>         
-      </ul> <!-- cd-item-action -->
-    </div> <!-- cd-item-info -->
-    <a href="#0" class="cd-close">Close</a>
-  </div> <!-- cd-quick-view -->
+            @endif
+            @endforeach
+          </div>
+        </ul> <!-- cd-items -->
+
+
+        <div class="cd-quick-view">
+          <div class="cd-slider-wrapper">
+            <ul class="cd-slider">
+              <li id="gambar_1" class="selected"></li>
+              <li id="gambar_2"></li>
+              <li id="gambar_3"></li>
+            </ul> <!-- cd-slider -->
+
+            <ul class="cd-slider-navigation">
+              <li><a class="cd-next" href="#0">Prev</a></li>
+              <li><a class="cd-prev" href="#0">Next</a></li>
+            </ul> <!-- cd-slider-navigation -->
+          </div> <!-- cd-slider-wrapper -->
+
+          <div id="info" class="cd-item-info">
+            <h2 id="title_p"></h2>
+            <h2 id="isi" style="padding-top: 1em;"></h2>
+            <p id="desc"></p>
+
+            <ul class="cd-item-action">
+              <li><button class="add-to-cart">Add to cart</button></li>
+            </ul> <!-- cd-item-action -->
+          </div> <!-- cd-item-info -->
+          <a href="#0" class="cd-close">Close</a>
+        </div> <!-- cd-quick-view -->
 
 
         <!-- <div class="row menu-container">
@@ -228,13 +239,13 @@
           @endif
         @endforeach -->
 
-        </div>
+      </div>
 
       </div>
     </section><!-- End Menu Section -->
 
     <!-- ======= Gallery Section ======= -->
-    <section id="menu" class="gallery">
+    <!-- <section id="menu" class="gallery">
       <div class="container-fluid">
 
         <div class="section-title">
@@ -263,9 +274,9 @@
         </div>
 
       </div>
-    </section><!-- End Gallery Section -->
+    </section>End Gallery Section -->
 
-       
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -295,8 +306,8 @@
 
   <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
   <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
-  <i class="fa fa-whatsapp my-float"></i>
-  </a>  
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
   <!-- Vendor JS Files -->
   <script src="{{asset('js/jquery-2.1.1.js')}}"></script>
   <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
@@ -312,10 +323,10 @@
   <script src="{{asset('js/modernizr.js')}}"></script>
   <script src="{{asset('js/main.js')}}"></script>
   <script src="{{asset('js/modal.js')}}"></script>
-  
+
   <script src="{{asset('js/velocity.min.js')}}"></script>
-  
-  
+
+
 
 </body>
 
