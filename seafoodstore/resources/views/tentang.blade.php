@@ -259,7 +259,7 @@
               </div>
               <div class="tab-pane" id="tab-3">
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
+                  <div class="col-lg-12 details order-2 order-lg-1">
                     <h3>Strategi Pengembangan</h3>
                     <p style="text-align: justify;" class="font-italic">Kami menyadari bahwa dalam
                                         mengembangkan produk memerlukan strategi
@@ -272,9 +272,9 @@
                                 </ul>
                     </p>
                   </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <!-- <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{{asset('img/specials-3.jpg')}}" alt="" class="img-fluid">
-                  </div>
+                  </div> -->
                 </div>
               </div>
 
