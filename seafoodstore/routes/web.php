@@ -41,3 +41,6 @@ Route::get('/contact', function () {
 Route::get('/b', function () {
     return view('button');
 });
+Route::get('/d', function () {
+    return view('index_dashboard');
+});
