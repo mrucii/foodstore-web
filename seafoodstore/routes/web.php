@@ -38,3 +38,6 @@ Route::get('/resep1', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+Route::get('/b', function () {
+    return view('button');
+});
