@@ -23,6 +23,8 @@
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
+    <script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/classic/ckeditor.js"></script>
+
 </head>
 
 <body id="page-top">
@@ -498,8 +500,8 @@
                                 <input type="text" class="form-control" id="recipient-name">
                               </div>
                               <div class="form-group">
-                                <label for="message-text" class="col-form-label">Isi</label>
-                                <textarea class="form-control" id="message-text"></textarea>
+                                <label for="message-text" class="col-form-label">Isi</label><div id="editor"></div>
+                                
                               </div>
 
                               <div class="form-group">
@@ -507,6 +509,7 @@
                                 <input type="file" class="form-control-file" id="exampleFormControlFile1">
                               </div>
                             </form>
+
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -538,39 +541,41 @@
                   </div>
                 </div>
 
-                <div class="modal" tabindex="-1" role="dialog" id="tambahModal">
+                 <div class="modal" tabindex="-1" role="dialog" id="tambahModal">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title">Tambah Blog</h5>
+                        <h5 class="modal-title">Hapus Blog</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        <form>
+                       <form>
                               <div class="form-group">
-                                <label for="" class="col-form-label">Judul Blog</label>
+                                <label for="recipient-name" class="col-form-label">Judul Blog</label>
                                 <input type="text" class="form-control" id="recipient-name">
                               </div>
                               <div class="form-group">
-                                <label for="" class="col-form-label">Isi</label>
-                                <textarea class="form-control" id="message-text"></textarea>
+                                <label for="message-text" class="col-form-label">Isi</label><div id="editor2"></div>
+                                
                               </div>
 
                               <div class="form-group">
-                                <label for="">Upload foto</label>
+                                <label for="exampleFormControlFile1">Upload foto</label>
                                 <input type="file" class="form-control-file" id="exampleFormControlFile1">
                               </div>
                             </form>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Tambah</button>
+                        <button type="button" class="btn btn-primary">Simpan</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                
             <!-- End of Main Content -->
 
             <!-- Footer -->
@@ -622,7 +627,9 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="{{asset('js/sb-admin-2.min.js')}}"></script>
+    <script src="{{asset('js/sb-admin-2.js')}}"></script>
+
 
     <!-- Page level plugins -->
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
@@ -630,6 +637,23 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
+    // <script>
+    //     ClassicEditor
+    //         .create( document.querySelector( '#editor' ) )
+    //         .catch( error => {
+    //             console.error( error );
+    //         } );
+    // </script>
+
+    // <script>
+    //     ClassicEditor
+    //         .create( document.querySelector( '#editor2' ) )
+    //         .catch( error => {
+    //             console.error( error );
+    //         } );
+    // </script>
+
+
 
 </body>
 

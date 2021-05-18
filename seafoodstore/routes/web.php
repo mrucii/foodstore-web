@@ -63,3 +63,7 @@ Route::get('/add_produk', function () {
 Route::get('/add_blog', function () {
     return view('add_blog');
 });
+
+Route::get('/add_resep', function () {
+    return view('add_resep');
+});
