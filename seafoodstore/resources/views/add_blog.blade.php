@@ -411,8 +411,8 @@
                                     </tfoot> -->
                                     <tbody>
                                         <tr>
-                                            <td>Protokol Kesehatan Saat Pandemi Covid-19</td>
-                                            <td>Jumlah kasus infeksi virus corona di Indonesia kian meningkat. Bertambahnya jumlah kasus ini membuat angka infeksi Covid-19 di Indonesia menembus angka 1 juta. . </td>
+                                            <td>Ufo</td>
+                                            <td>Kementerian Pertahanan AS (DOD) telah mengkonfirmasi bahwa foto dan video atas "fenomena udara tak dikenal atau UAP (unidentified aerial phenomena)" yang diambil pada tahun 2019 memang merupakan gambar sah dari objek terbang tak teridentifikasi alias UFO. </td>
                                             <td>b1.jpg</td>
                                             <td><div class="my-2"></div>
                                                 <a href="#" class="btn btn-info btn-icon-split" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
