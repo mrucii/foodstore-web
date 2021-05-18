@@ -44,3 +44,18 @@ Route::get('/b', function () {
 Route::get('/d', function () {
     return view('index_dashboard');
 });
+
+Route::get('/register', function () {
+    return view('register');
+});
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/blank', function () {
+    return view('blank');
+});
+
+Route::get('/add_produk', function () {
+    return view('add_produk');
+});
