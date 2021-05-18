@@ -59,3 +59,7 @@ Route::get('/blank', function () {
 Route::get('/add_produk', function () {
     return view('add_produk');
 });
+
+Route::get('/add_blog', function () {
+    return view('add_blog');
+});
