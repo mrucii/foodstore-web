@@ -385,15 +385,15 @@
                                         <span class="icon text-white-50">
                                             <i class="fa fa-plus"></i>
                                         </span>
-                                        <span class="text">Tambah Produk</span>
+                                        <span class="text">Tambah Blog</span>
                                     </a>
                                 </div>
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Nama</th>
-                                            <th>Deskrpisi Produk</th>
-                                            <th>Foto</th>
+                                            <th>Judul Resep</th>
+                                            <th>Isi</th>
+                                            <th>Link</th>
                                             <th>Edit</th>
                                             <th>Hapus</th>
                                             
@@ -411,8 +411,47 @@
                                     </tfoot> -->
                                     <tbody>
                                         <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
+                                            <td>RESEP KERANG HIJAU SAUS PADANG dan cara membersihkan kerang</td>
+                                            <td>kerang hijau saus padang 
+                                                    bahan"nya :
+                                                    1 kg kerang hijau (rebus pake daun salam + daun jeruk )
+                                                    1 buah jagung
+                                                    1 buah wortel
+                                                    pakcoy secukupnya
+                                                    4 siung bawang merah
+                                                    5 siung bawang putih
+                                                    3 buah cabe merah besar
+                                                    5 buah cabe kriting merah
+                                                    sedikit jahe
+                                                    1⁄2 buah bawang bombay
+                                                    daun salam, sereh, lengkuas
+                                                    5 sdm saus sambal
+                                                    4 sdm saus tomat
+                                                    3 sdm saus tiram
+                                                    1 1⁄2 sdt garam
+                                                    1 sdt kaldu ayam bubuk
+                                                    1⁄2 sdt merica
+                                                    3 sdt gula pasir</td>
+                                            <td>https://youtu.be/7M-5_JouM4M</td>
+                                            <td><div class="my-2"></div>
+                                                <a href="#" class="btn btn-info btn-icon-split" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                                                    <span class="icon text-white-50">
+                                                <i class="fas fa-edit"></i>
+                                                </span>
+                                            <span class="text">Edit</span>
+                                    </a></td>
+                                            <td><div class="my-2"></div>
+                                    <a href="#" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#apeModal">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-trash"></i>
+                                        </span>
+                                        <span class="text">Delete</span>
+                                    </a></td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>rotokol Kesehatan Saat Pandemi Covid-19</td>
+                                            <td>Jumlah kasus infeksi virus corona di Indonesia kian meningkat. Bertambahnya jumlah kasus ini membuat angka infeksi Covid-19 di Indonesia menembus angka 1 juta. .</td>
                                             <td>b1.jpg</td>
                                             <td><div class="my-2"></div>
                                                 <a href="#" class="btn btn-info btn-icon-split" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
@@ -422,7 +461,7 @@
                                             <span class="text">Edit</span>
                                     </a></td>
                                             <td><div class="my-2"></div>
-                                    <a href="#" class="btn btn-danger btn-icon-split">
+                                    <a href="#" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#apeModal">
                                         <span class="icon text-white-50">
                                             <i class="fas fa-trash"></i>
                                         </span>
@@ -431,28 +470,8 @@
                                             
                                         </tr>
                                         <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>Accountant</td>
-                                            <td>b1.jpg</td>
-                                            <td><div class="my-2"></div>
-                                                <a href="#" class="btn btn-info btn-icon-split" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                                                    <span class="icon text-white-50">
-                                                <i class="fas fa-edit"></i>
-                                                </span>
-                                            <span class="text">Edit</span>
-                                    </a></td>
-                                            <td><div class="my-2"></div>
-                                    <a href="#" class="btn btn-danger btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-trash"></i>
-                                        </span>
-                                        <span class="text">Delete</span>
-                                    </a></td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Ashton Cox</td>
-                                            <td>Junior Technical Author</td>
+                                            <td>Protokol Kesehatan Saat Pandemi Covid-19</td>
+                                            <td>Jumlah kasus infeksi virus corona di Indonesia kian meningkat. Bertambahnya jumlah kasus ini membuat angka infeksi Covid-19 di Indonesia menembus angka 1 juta. .</td>
                                             <td>b1.jpg</td>
                                             <td><div class="my-2"></div>
                                                 <a href="#" class="btn btn-info btn-icon-split" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
@@ -486,7 +505,7 @@
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Edit Produk</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Edit Blog</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                             </button>
@@ -494,26 +513,14 @@
                           <div class="modal-body">
                             <form>
                               <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Nama Produk:</label>
+                                <label for="recipient-name" class="col-form-label">Judul Blog</label>
                                 <input type="text" class="form-control" id="recipient-name">
                               </div>
                               <div class="form-group">
-                                <label for="message-text" class="col-form-label">Deskripsi:</label>
+                                <label for="message-text" class="col-form-label">Isi</label>
                                 <textarea class="form-control" id="message-text"></textarea>
                               </div>
 
-                              <div class="form-group">
-                                <label for="exampleFormControlFile1">Upload foto</label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleFormControlFile1">Upload foto</label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleFormControlFile1">Upload foto</label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                              </div>
                               <div class="form-group">
                                 <label for="exampleFormControlFile1">Upload foto</label>
                                 <input type="file" class="form-control-file" id="exampleFormControlFile1">
@@ -534,13 +541,13 @@
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title">Hapus Produk</h5>
+                        <h5 class="modal-title">Hapus Blog</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        <p>Apakah anda yakin ingin menghapus produk ini?</p>
+                        <p>Apakah anda yakin ingin menghapus artikel ini?</p>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-danger">Hapus</button>
@@ -554,7 +561,7 @@
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title">Tambah Produk</h5>
+                        <h5 class="modal-title">Tambah Blog</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -562,11 +569,11 @@
                       <div class="modal-body">
                         <form>
                               <div class="form-group">
-                                <label for="" class="col-form-label">Nama Produk:</label>
+                                <label for="" class="col-form-label">Judul Blog</label>
                                 <input type="text" class="form-control" id="recipient-name">
                               </div>
                               <div class="form-group">
-                                <label for="" class="col-form-label">Deskripsi:</label>
+                                <label for="" class="col-form-label">Isi</label>
                                 <textarea class="form-control" id="message-text"></textarea>
                               </div>
 
