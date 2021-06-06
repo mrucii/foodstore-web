@@ -25,6 +25,7 @@
   <link href="{{asset('vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
@@ -95,7 +96,7 @@
                   manajemen usaha.</p>
                 <div>
                   <!-- <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Product</a> -->
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Contact Us</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Chat Us!</a>
                 </div>
               </div>
             </div>
@@ -108,7 +109,7 @@
                 <h2 class="animate__animated animate__fadeInDown">Cahaya Seafood</h2>
                 <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                 <div>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Contact Us</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Chat Us!</a>
                 </div>
               </div>
             </div>
@@ -122,7 +123,7 @@
                 <h2 class="animate__animated animate__fadeInDown">Cahaya Seafood</h2>
                 <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                 <div>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Contact Us</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Chat Us!</a>
                 </div>
               </div>
             </div>
@@ -228,11 +229,10 @@
       <h3>Cahaya Seafood</h3>
       <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Delicious</span></strong>. All Rights Reserved
@@ -248,9 +248,16 @@
   </footer><!-- End Footer -->
 
   <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
-  <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+  <!-- <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
   <i class="fa fa-whatsapp my-float"></i>
-  </a>
+  </a> -->
+  <div class="sbuttons">
+   
+    <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." target="_blank" class="sbutton whatsapp" tooltip="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" target="_blank" class="sbutton fb" tooltip="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank" class="sbutton telegram" tooltip="Telegram"><i class="fab fa-telegram"></i></a>
+    <a target="_blank" class="sbutton mainsbutton" tooltip="Share"><i class="fa fa-phone"></i></a>
+  </div>  
 
   <!-- Vendor JS Files -->
   <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>

@@ -25,6 +25,7 @@
   <link href="{{asset('vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
@@ -94,7 +95,7 @@
                   untuk senantiasa meningkatkan profesionalisme usaha dalam hal peningkatan
                   manajemen usaha.</p>
                 <div>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Contact Us</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Chat Us!</a>
                 </div>
               </div>
             </div>
@@ -107,7 +108,7 @@
                 <h2 class="animate__animated animate__fadeInDown">Cahaya Seafood</h2>
                 <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                 <div>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Contact Us</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Chat Us!</a>
                 </div>
               </div>
             </div>
@@ -121,7 +122,7 @@
                 <h2 class="animate__animated animate__fadeInDown">Cahaya Seafood</h2>
                 <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                 <div>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Contact Us</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Chat Us!</a>
                 </div>
               </div>
             </div>
@@ -222,7 +223,7 @@
             <div class="tab-content">
               <div class="tab-pane active show" id="tab-1">
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
+                  <div class="col-lg-12 details order-2 order-lg-1">
                     <h3>Visi</h3>
                     <p style="text-align: justify;" class="font-italic">Menjadi pengelola dan supplier seafood yang unggul, terkemuka
                     dan terdepan dalam pelayanan, kinerja serta menjadi wadah
@@ -232,14 +233,14 @@
                     dan terdepan dalam pelayanan, kinerja serta menjadi wadah
                     pencetakan pengusaha baru.</p>
                   </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <!-- <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{{asset('img/specials-1.jpg')}}" alt="" class="img-fluid">
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="tab-pane" id="tab-2">
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
+                  <div class="col-lg-12 details order-2 order-lg-1">
                     <h3>Tujuan Kami</h3>
                     <p style="text-align: justify;" class="font-italic">Dengan berbekal pengetahuan, pengalaman dan sasaran, kami memfokuskan
                       diri untuk menjadi pengelola dan supplier seafood yang ber-orentasi pada
@@ -252,9 +253,9 @@
                                 </ul>
                     </p>
                   </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <!-- <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{{asset('img/specials-2.jpg')}}" alt="" class="img-fluid">
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="tab-pane" id="tab-3">
@@ -280,7 +281,7 @@
 
               <div class="tab-pane" id="tab-4">
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
+                  <div class="col-lg-12 details order-2 order-lg-1">
                     <h3>Pengembangan Sumber Daya Manusia</h3>
                     <p style="text-align: justify;" class="font-italic">Dengan pengelolaan SDM yang baik dan disertai dengan <b>system continues
                                           improvement</b>, kami mampu memberikan layanan dan solusi yang terbaik bagi mitra
@@ -290,9 +291,9 @@
                                 berkualitas</p>
                     </p>
                   </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <!-- <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{{asset('img/specials-3.jpg')}}" alt="" class="img-fluid">
-                  </div>
+                  </div> -->
                 </div>
               </div>     
             </div>
@@ -369,64 +370,46 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Events Section ======= -->
-    <section id="about" class="events">
+    <!-- ======= jenis kemasan ======= -->
+     <section id="events" class="why-us">
       <div class="container">
 
         <div class="section-title">
           <h2>Jenis <span>Kemasan</span></h2>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
         </div>
 
-        <div class="owl-carousel events-carousel">
-
-          <div class="row event-item">
-            <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="box">
+              
               <img src="{{asset('img/event-birthday.jpg')}}" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>KEMASAN MINI (1-5 KG)</h3>
-              <div class="price">
-                <p><span><br></span></p>
-              </div>
-              <p class="font-italic">
-                Untuk pengriman per kg menggunakan tempat box plastik dan Es batu.
-              </p>
-              <ul>
-                
-              </ul>
-              <p>
-                Tujuan dari packaging tersebut untuk menjaga produk tetap "FRESH"
-                sampai ke tempat pemesan.
-              </p>
+              <h4>Jenis Kemasan 1</h4>
+              <h6>1 KG</h6>
+              <p style="text-align: justify;">jenis kemasan udang<br></br>
+              <a href="">Read more</a></p>
             </div>
           </div>
+      
 
-          <div class="row event-item">
-            <div class="col-lg-6">
-              <img src="{{asset('img/event-birthday.jpg')}}" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>KEMASAN BESAR ( > 5KG)</h3>
-              <div class="price">
-                <p><span><br></span></p>
-              </div>
-              <p class="font-italic">
-                Untuk pengriman lebih dari 5 kg menggunakan coller box dan Es batu.
-              </p>
-              <ul>
-                
-              </ul>
-              <p>
-                Tujuan dari packaging tersebut untuk menjaga produk tetap <b>FRESH</b>
-                sampai ke tempat pemesan.
-              </p>
-            </div>
-          </div>
         </div>
+        <div class="row text-center">
+                    <div class="text-center">
+                        <div class="pagination text-center">
+                            <ul>
+                                <li><a href="javascript:void(0)">1</a></li>
+                                <li><a href="javascript:void(0)" class="active">2</a></li>
+                                <li><a href="javascript:void(0)">3</a></li>
+                                <li><a href="javascript:void(0)">4</a></li>
+                                <li><a href="javascript:void(0)">...</a></li>
+                                <li><a href="javascript:void(0)">11</a></li>
+                            </ul>
+                        </div> <!-- /.pagination -->
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
 
       </div>
-    </section><!-- End Events Section -->
-
+    </section><!-- End jenis kemasan -->
 
   </main><!-- End #main -->
 
@@ -436,11 +419,10 @@
       <h3>Cahaya Seafood</h3>
       <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+       
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Delicious</span></strong>. All Rights Reserved
@@ -456,9 +438,17 @@
   </footer><!-- End Footer -->
 
   <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
-  <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+  <!-- <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
   <i class="fa fa-whatsapp my-float"></i>
-  </a>
+  </a> -->
+
+  <div class="sbuttons">
+   
+    <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." target="_blank" class="sbutton whatsapp" tooltip="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" target="_blank" class="sbutton fb" tooltip="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank" class="sbutton telegram" tooltip="Telegram"><i class="fab fa-telegram"></i></a>
+    <a target="_blank" class="sbutton mainsbutton" tooltip="Share"><i class="fa fa-phone"></i></a>
+  </div>  
 
   <!-- Vendor JS Files -->
   <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
