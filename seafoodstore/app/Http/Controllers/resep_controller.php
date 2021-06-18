@@ -18,7 +18,12 @@ class resep_controller extends Controller
         // return $posts;
         return view('resep', ['resep' => $resep]);
     }
-
+    public function index_admin()
+    {
+        $resep = resep::all();
+        // return $posts;
+        return view('add_resep', ['resep' => $resep]);
+    }
     public function detail_resep($id)
     {
         $resep_detail = resep::where('id',$id)->get();
@@ -29,9 +34,14 @@ class resep_controller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $post = new resep;
+        $post->nama = $request->judul;
+        $post->isi = $request->isi;
+        $post->link_youtube = $request->link;
+        $post->save();
+        return back()->with('success', 'Selamat, Post telah berhasil ditambahkan.');
     }
 
     /**
@@ -87,6 +97,7 @@ class resep_controller extends Controller
      */
     public function destroy($id)
     {
-        //
+        resep::destroy($id);
+        return back();
     }
 }

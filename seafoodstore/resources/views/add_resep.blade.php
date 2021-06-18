@@ -13,15 +13,15 @@
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/classic/ckeditor.js"></script>
+
 
 </head>
 
@@ -61,8 +61,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Components</span>
                 </a>
@@ -77,13 +76,11 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Utilities</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Utilities:</h6>
                         <a class="collapse-item" href="utilities-color.html">Colors</a>
@@ -104,8 +101,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Pages</span>
                 </a>
@@ -165,11 +161,9 @@
                     </form>
 
                     <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
@@ -183,18 +177,14 @@
 
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
-                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-search fa-fw"></i>
                             </a>
                             <!-- Dropdown - Messages -->
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                                aria-labelledby="searchDropdown">
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small"
-                                            placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
+                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
@@ -207,15 +197,13 @@
 
                         <!-- Nav Item - Alerts -->
                         <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw"></i>
                                 <!-- Counter - Alerts -->
                                 <span class="badge badge-danger badge-counter">3+</span>
                             </a>
                             <!-- Dropdown - Alerts -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="alertsDropdown">
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                                 <h6 class="dropdown-header">
                                     Alerts Center
                                 </h6>
@@ -258,22 +246,19 @@
 
                         <!-- Nav Item - Messages -->
                         <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-envelope fa-fw"></i>
                                 <!-- Counter - Messages -->
                                 <span class="badge badge-danger badge-counter">7</span>
                             </a>
                             <!-- Dropdown - Messages -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="messagesDropdown">
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
                                 <h6 class="dropdown-header">
                                     Message Center
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -284,8 +269,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -296,8 +280,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -308,8 +291,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
-                                            alt="...">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div>
@@ -326,15 +308,12 @@
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
@@ -366,26 +345,25 @@
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Tables</h1>
                     <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-                        For more information about DataTables, please visit the <a target="_blank"
-                            href="https://datatables.net">official DataTables documentation</a>.</p>
+                        For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
                         </div>
-                        
+
 
                         <div class="card-body">
-                            
+
                             <div class="table-responsive">
 
-                               <div class = "card-body">
+                                <div class="card-body">
                                     <a href="#" class="btn btn-success btn-icon-split" data-toggle="modal" data-target="#tambahModal">
                                         <span class="icon text-white-50">
                                             <i class="fa fa-plus"></i>
                                         </span>
-                                        <span class="text">Tambah Blog</span>
+                                        <span class="text">Tambah Resep</span>
                                     </a>
                                 </div>
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -396,101 +374,42 @@
                                             <th>Link</th>
                                             <th>Edit</th>
                                             <th>Hapus</th>
-                                            
+
                                         </tr>
                                     </thead>
-                                    <!-- <tfoot>
-                                        <tr>
-                                            <th>Nama</th>
-                                            <th>Deskrpisi Produk</th>
-                                            <th>Foto</th>
-                                            <th>Aksi</th>
-                                            <th>Start date</th>
-                                            
-                                        </tr>
-                                    </tfoot> -->
+
                                     <tbody>
+                                        @foreach($resep as $key=>$value)
                                         <tr>
-                                            <td>RESEP KERANG HIJAU SAUS PADANG dan cara membersihkan kerang</td>
-                                            <td>kerang hijau saus padang 
-                                                    bahan"nya :
-                                                    1 kg kerang hijau (rebus pake daun salam + daun jeruk )
-                                                    1 buah jagung
-                                                    1 buah wortel
-                                                    pakcoy secukupnya
-                                                    4 siung bawang merah
-                                                    5 siung bawang putih
-                                                    3 buah cabe merah besar
-                                                    5 buah cabe kriting merah
-                                                    sedikit jahe
-                                                    1⁄2 buah bawang bombay
-                                                    daun salam, sereh, lengkuas
-                                                    5 sdm saus sambal
-                                                    4 sdm saus tomat
-                                                    3 sdm saus tiram
-                                                    1 1⁄2 sdt garam
-                                                    1 sdt kaldu ayam bubuk
-                                                    1⁄2 sdt merica
-                                                    3 sdt gula pasir</td>
-                                            <td>https://youtu.be/7M-5_JouM4M</td>
-                                            <td><div class="my-2"></div>
-                                                <a href="#" class="btn btn-info btn-icon-split" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                                            <td id="judul">{{$value->nama}}</td>
+                                            <td id="deskripsi">{!!\Illuminate\Support\Str::limit($value->isi, 25, $end='...')!!}</td>
+                                            <td>{{$value->link_youtube}}</td>
+
+
+                                            <td>
+                                                <div class="my-2"></div>
+                                                <a href="#" class="btn btn-info btn-icon-split edit" data-toggle="modal" data-target="#edit" data-judul="{{$value->nama_product}}" data-isi="{{$value->deskripsi}}">
                                                     <span class="icon text-white-50">
-                                                <i class="fas fa-edit"></i>
-                                                </span>
-                                            <span class="text">Edit</span>
-                                    </a></td>
-                                            <td><div class="my-2"></div>
-                                    <a href="#" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#apeModal">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-trash"></i>
-                                        </span>
-                                        <span class="text">Delete</span>
-                                    </a></td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>rotokol Kesehatan Saat Pandemi Covid-19</td>
-                                            <td>Jumlah kasus infeksi virus corona di Indonesia kian meningkat. Bertambahnya jumlah kasus ini membuat angka infeksi Covid-19 di Indonesia menembus angka 1 juta. .</td>
-                                            <td>b1.jpg</td>
-                                            <td><div class="my-2"></div>
-                                                <a href="#" class="btn btn-info btn-icon-split" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                                                        <i class="fas fa-edit"></i>
+                                                    </span>
+                                                    <span class="text">Edit</span>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <div class="my-2"></div>
+                                                <a href="#" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#apeModal">
                                                     <span class="icon text-white-50">
-                                                <i class="fas fa-edit"></i>
-                                                </span>
-                                            <span class="text">Edit</span>
-                                    </a></td>
-                                            <td><div class="my-2"></div>
-                                    <a href="#" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#apeModal">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-trash"></i>
-                                        </span>
-                                        <span class="text">Delete</span>
-                                    </a></td>
-                                            
+                                                        <i class="fas fa-trash"></i>
+                                                    </span>
+                                                    <span class="text">Delete</span>
+                                                </a>
+                                            </td>
+
                                         </tr>
-                                        <tr>
-                                            <td>Protokol Kesehatan Saat Pandemi Covid-19</td>
-                                            <td>Jumlah kasus infeksi virus corona di Indonesia kian meningkat. Bertambahnya jumlah kasus ini membuat angka infeksi Covid-19 di Indonesia menembus angka 1 juta. .</td>
-                                            <td>b1.jpg</td>
-                                            <td><div class="my-2"></div>
-                                                <a href="#" class="btn btn-info btn-icon-split" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                                                    <span class="icon text-white-50">
-                                                <i class="fas fa-edit"></i>
-                                                </span>
-                                            <span class="text">Edit</span>
-                                    </a></td>
-                                            <td><div class="my-2"></div>
-                                    <a href="#" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#apeModal">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-trash"></i>
-                                        </span>
-                                        <span class="text">Delete</span>
-                                    </a></td>
-                                            
-                                        </tr>
-                                        
+                                        @endforeach
+
                                     </tbody>
+
                                 </table>
                             </div>
                         </div>
@@ -499,97 +418,93 @@
                 </div>
                 <!-- /.container-fluid -->
 
-                
+
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
+                    <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Edit Blog</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <form>
-                              <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Judul Blog</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                              </div>
-                              <div class="form-group">
-                                <label for="message-text" class="col-form-label">Isi</label>
-                                <textarea class="form-control" id="message-text"></textarea>
-                              </div>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Edit Blog</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Judul Blog</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Isi</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
 
-                              <div class="form-group">
-                                <label for="exampleFormControlFile1">Upload foto</label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                              </div>
-                            </form>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Simpan</button>
-                          </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlFile1">Upload foto</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Simpan</button>
+                            </div>
                         </div>
-                      </div>
                     </div>
+                </div>
 
             </div>
 
             <div class="modal" tabindex="-1" role="dialog" id="apeModal">
-                  <div class="modal-dialog" role="document">
+                <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Hapus Blog</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <p>Apakah anda yakin ingin menghapus artikel ini?</p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-danger">Hapus</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
+                        <div class="modal-header">
+                            <h5 class="modal-title">Hapus Blog</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Apakah anda yakin ingin menghapus artikel ini?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="{{route('delete_resep', ['id' => $value->id])}}" class="btn btn-danger">Hapus</a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
-                  </div>
                 </div>
+            </div>
 
-                <div class="modal" tabindex="-1" role="dialog" id="tambahModal">
-                  <div class="modal-dialog" role="document">
+            <div class="modal" tabindex="-1" role="dialog" id="tambahModal">
+                <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Tambah Blog</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <form>
-                              <div class="form-group">
-                                <label for="" class="col-form-label">Judul Blog</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                              </div>
-                              <div class="form-group">
-                                <label for="" class="col-form-label">Isi</label>
-                                <textarea class="form-control" id="message-text"></textarea>
-                              </div>
-
-                              <div class="form-group">
-                                <label for="">Upload foto</label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                              </div>
+                        <div class="modal-header">
+                            <h5 class="modal-title">Tambah Resep</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="{{route('add_resep')}}" method="POST" enctype="multipart/form-data">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="" class="col-form-label">Judul Resep</label>
+                                    <input name="judul" type="text" class="form-control" id="recipient-name" required>
+                                    <label for="" class="col-form-label">Link Youtube</label>
+                                    <input name="link" type="text" class="form-control" id="recipient-names" required>
+                                    <label for="" class="col-form-label">Deskripsi</label><textarea name="isi" id="editor"></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary">Tambah</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
                             </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Tambah</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
+                        </div>
+
                     </div>
-                  </div>
                 </div>
+            </div>
             <!-- End of Main Content -->
 
             <!-- Footer -->
@@ -614,8 +529,7 @@
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -649,6 +563,20 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor2'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 
 </body>
 

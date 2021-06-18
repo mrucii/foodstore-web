@@ -160,7 +160,7 @@
             <div class="box">
               <span></span>
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="{{$value->link_youtube}}" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{\Illuminate\Support\Str::substr($value->link_youtube, 17)}}" allowfullscreen></iframe>
               </div>
               <h4>{{$value->nama}}</h4>
               <!-- <h6>4 Juli 2021 by Mutiara</h6> -->

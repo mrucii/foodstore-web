@@ -176,14 +176,14 @@
             @foreach($product as $key=>$value)
             @if($value->jenis == 'ikan')
             <li class="cd-item menu-item filter-starters">
-              <a href="#0" class="cd-trigger" data-nama="{{$value->nama_product}}" data-deskripsi="{{$value->deskripsi}}" data-isi="{{$value->isi}}" data-photo_1="{{asset('img/gallery/'. $value->gambar_1)}}" data-photo_2="{{asset('img/gallery/'. $value->gambar_2)}}" data-photo_3="{{asset('img/gallery/'. $value->gambar_3)}}">{{$value->nama_product}}</a>
-              <img src="{{asset('img/gallery/'. $value->gambar_1)}}" alt="Item Preview">
+              <a href="#0" class="cd-trigger" data-nama="{{$value->nama_product}}" data-deskripsi="{!! $value->deskripsi !!}" data-isi="{{$value->isi}}" data-photo_1="{{asset('images/'. $value->gambar_1)}}" data-photo_2="{{asset('images/'. $value->gambar_2)}}" data-photo_3="{{asset('images/'. $value->gambar_3)}}" data-photo_4="{{asset('images/'. $value->gambar_4)}}">{{$value->nama_product}}</a>
+              <img src="{{asset('images/'. $value->gambar_1)}}" alt="Item Preview">
             </li> <!-- cd-item -->
             @else
 
             <li class="cd-item menu-item filter-salads">
-              <a href="#0" class="cd-trigger" data-nama="{{$value->nama_product}}" data-deskripsi="{{$value->deskripsi}}" data-isi="{{$value->isi}}" data-photo_1="{{asset('img/gallery/'. $value->gambar_1)}}" data-photo_2="{{asset('img/gallery/'. $value->gambar_2)}}" data-photo_3="{{asset('img/gallery/'. $value->gambar_3)}}">{{$value->nama_product}}</a>
-              <img src="{{asset('img/gallery/'. $value->gambar_1)}}" alt="Item Preview">
+              <a href="#0" class="cd-trigger" data-nama="{{$value->nama_product}}" data-deskripsi="{!! $value->deskripsi !!}" data-isi="{{$value->isi}}" data-photo_1="{{asset('images/'. $value->gambar_1)}}" data-photo_2="{{asset('images/'. $value->gambar_2)}}" data-photo_3="{{asset('images/'. $value->gambar_3)}}" data-photo_4="{{asset('images/'. $value->gambar_4)}}">{{$value->nama_product}}</a>
+              <img src="{{asset('images/'. $value->gambar_1)}}" alt="Item Preview">
             </li> <!-- cd-item -->
 
             @endif
@@ -198,6 +198,7 @@
               <li id="gambar_1" class="selected"></li>
               <li id="gambar_2"></li>
               <li id="gambar_3"></li>
+              <li id="gambar_4"></li>
             </ul> <!-- cd-slider -->
 
             <ul class="cd-slider-navigation">

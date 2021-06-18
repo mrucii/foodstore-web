@@ -11,6 +11,7 @@ jQuery(document).ready(function($){
     $('#gambar_1').html('<img src="' + $(this).data('photo_1') + '"/>')
     $('#gambar_2').html('<img src="' + $(this).data('photo_2') + '"/>')
     $('#gambar_3').html('<img src="' + $(this).data('photo_3') + '"/>')
+    $('#gambar_4').html('<img src="' + $(this).data('photo_4') + '"/>')
     // $('#info').html('<h2> '+ $(this).data('nama') + "</h2>" + '<p> '+  "<p><span> " + $(this).data('isi') + " Ekor </span></p>" + $(this).data('deskripsi') + "</p>")
     $('#desc').html($(this).data('deskripsi'));
     $('#title_p').html($(this).data('nama'));

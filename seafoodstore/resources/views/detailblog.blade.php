@@ -151,21 +151,21 @@
       <div class="container-fluid">
 
         <div class="row">
+          @foreach($post_detail as $key=>$value)
 
-          <div class="col-lg-5 align-items-stretch video-box" style="background: url('{{asset('img/about.jpg')}}');">
-            
-          </div>
+          <img class="col-lg-5 align-items-stretch video-box" src="{{asset('images/'. $value->photo)}}" class="img-fluid" alt="">
+
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
-          @foreach($post_detail as $key=>$value)
+
             <div class="content">
-              <h3>{{$value->title}} <strong>1</strong></h3>
+              <h3>{{$value->title}} <strong></strong></h3>
               <h6>Author: {{$value->author}}</h6>
               <p style="text-align: justify;">
-                {{$value->isi}}
+                {!!$value->isi!!}
               </p>
-            @endforeach
-            <!--   <p class="font-italic">
+              @endforeach
+              <!--   <p class="font-italic">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua.
               </p>
@@ -217,7 +217,7 @@
 
   <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
   <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
-  <i class="fa fa-whatsapp my-float"></i>
+    <i class="fa fa-whatsapp my-float"></i>
   </a>
 
   <!-- Vendor JS Files -->

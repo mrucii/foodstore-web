@@ -160,7 +160,7 @@
           <div class="col-lg-4">
             <div class="box">
               
-              <img src="{{asset('img/event-birthday.jpg')}}" class="img-fluid" alt="">
+              <img src="{{asset('images/'. $value->photo)}}" class="img-fluid" alt="">
               <h4>{{$value->title}}</h4>
               <h6>{{$value->created_at}} - {{$value->author}}</h6>
               <p style="text-align: justify;">{{\Illuminate\Support\Str::limit($value->isi, 25, $end='...')}}<br></br>

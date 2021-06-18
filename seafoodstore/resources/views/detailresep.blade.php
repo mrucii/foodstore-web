@@ -152,8 +152,8 @@
 
         <div class="row">
         @foreach($resep_detail as $key=>$value) 
-          <div class="col-lg-5 align-items-stretch video-box" style="background: url('{{asset('img/about.jpg')}}');">
-            <a href="{{$value->link_youtube}}" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          <div class="col-lg-5 align-items-stretch video-box" style="background: url('https://img.youtube.com/vi/{{\Illuminate\Support\Str::substr($value->link_youtube, 17)}}/0.jpg');">
+            <a href="https://www.youtube.com/embed/{{\Illuminate\Support\Str::substr($value->link_youtube, 17)}}" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
@@ -161,7 +161,7 @@
             <div class="content">
               <h3>{{$value->nama}}</h3>
               <p style="text-align: justify;">
-                {{$value->isi}}
+                {!!$value->isi!!}
               </p>
             <!--   <p class="font-italic">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore

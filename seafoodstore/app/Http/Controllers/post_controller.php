@@ -17,6 +17,12 @@ class post_controller extends Controller
         // return $posts;
         return view('blog', ['post' => $post]);
     }
+    public function index_admin()
+    {
+        $post = post::all();
+        // return $posts;
+        return view('add_blog', ['post' => $post]);
+    }
 
     public function detail_blog($id)
     {
@@ -29,9 +35,20 @@ class post_controller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $request->validate([
+            'image1' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        $imageName1 = time() . 1 . '.' . $request->image1->extension();
+        $request->image1->move(public_path('images'), $imageName1);
+        $post = new post;
+        $post->photo =  $imageName1;
+        $post->title = $request->judul;
+        $post->isi = $request->editor2;
+        $post->author = "Admin 1";
+        $post->save();
+        return back()->with('success', 'Selamat, Post telah berhasil ditambahkan.');
     }
 
     /**
@@ -87,6 +104,7 @@ class post_controller extends Controller
      */
     public function destroy($id)
     {
-        //
+        post::destroy($id);
+        return back();
     }
 }

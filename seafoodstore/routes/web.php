@@ -56,14 +56,15 @@ Route::get('/blank', function () {
     return view('blank');
 });
 
-Route::get('/add_produk', function () {
-    return view('add_produk');
-});
+Route::get('/add_produk', 'product_controller@index_admin')->name('add_index');
+Route::post('/add_produk', 'product_controller@create')->name('add_produk');
+Route::get('/delete_produk/{id}', 'product_controller@destroy')->name('delete_produk');
+Route::get('/delete_post/{id}', 'post_controller@destroy')->name('delete_post');
+Route::get('/delete_resep/{id}', 'resep_controller@destroy')->name('delete_resep');
 
-Route::get('/add_blog', function () {
-    return view('add_blog');
-});
 
-Route::get('/add_resep', function () {
-    return view('add_resep');
-});
+Route::get('/add_blog', 'post_controller@index_admin');
+Route::post('/add_blog', 'post_controller@create')->name('add_post');
+
+Route::get('/add_resep','resep_controller@index_admin' );
+Route::post('/add_resep','resep_controller@create' )->name('add_resep');
