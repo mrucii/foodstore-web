@@ -388,21 +388,21 @@
 
                                             <td>
                                                 <div class="my-2"></div>
-                                                <a href="#" class="btn btn-info btn-icon-split edit" data-toggle="modal" data-target="#edit" data-judul="{{$value->nama_product}}" data-isi="{{$value->deskripsi}}">
+                                                <button href="#" class="btn btn-info btn-icon-split edit" data-toggle="modal" data-target="#editModal" data-judul="{{$value->nama}}" data-isi="{{$value->isi}}" data-link="{{$value->link_youtube}}">
                                                     <span class="icon text-white-50">
                                                         <i class="fas fa-edit"></i>
                                                     </span>
                                                     <span class="text">Edit</span>
-                                                </a>
+                                                </button>
                                             </td>
                                             <td>
                                                 <div class="my-2"></div>
-                                                <a href="#" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#apeModal">
+                                                <button id="hapus" href="#" class="btn btn-danger btn-icon-split cd-trigger" data-href="{{route('delete_resep', ['id' => $value->id])}}" data-toggle="modal" data-target="#apeModal">
                                                     <span class="icon text-white-50">
                                                         <i class="fas fa-trash"></i>
                                                     </span>
                                                     <span class="text">Delete</span>
-                                                </a>
+                                                </button>
                                             </td>
 
                                         </tr>
@@ -420,7 +420,7 @@
 
 
 
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -432,17 +432,11 @@
                             <div class="modal-body">
                                 <form>
                                     <div class="form-group">
-                                        <label for="recipient-name" class="col-form-label">Judul Blog</label>
-                                        <input type="text" class="form-control" id="recipient-name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="message-text" class="col-form-label">Isi</label>
-                                        <textarea class="form-control" id="message-text"></textarea>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="exampleFormControlFile1">Upload foto</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                        <label for="" class="col-form-label">Judul Resep</label>
+                                        <input name="judul" type="text" class="form-control" id="recipient-name" required>
+                                        <label for="" class="col-form-label">Link Youtube</label>
+                                        <input name="link" type="text" class="form-control" id="link" required>
+                                        <label for="" class="col-form-label">Deskripsi</label><textarea name="isi" id="editor2"></textarea>
                                     </div>
                                 </form>
                             </div>
@@ -469,7 +463,7 @@
                             <p>Apakah anda yakin ingin menghapus artikel ini?</p>
                         </div>
                         <div class="modal-footer">
-                            <a href="{{route('delete_resep', ['id' => $value->id])}}" class="btn btn-danger">Hapus</a>
+                            <a id="button_hapus"href="" class="btn btn-danger">Hapus</a>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
@@ -576,6 +570,46 @@
             .catch(error => {
                 console.error(error);
             });
+    </script>
+    <script>
+        // jQuery(document).ready(function($) {
+        //             $('#edit').on('show', function(e) {
+        //                 var link = e.relatedTarget(),
+        //                     modal = $(this),
+        //                     username = link.data("judul"),
+        //                     email = link.data("deskripsi");
+
+        //                 modal.find("modal-content").find("modal-body").find("form-group").find("#deskripsi").val(email);
+        //                 modal.find("#deskripsi").val(username);
+        //             });
+        //         },
+
+        $('#editModal').on('show.bs.modal', function(event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipient = button.data('judul')
+            var recipient2 = button.data('isi')
+            var recipient3 = button.data('link') // Extract info from data-* attributes
+            // // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+
+            modal.find('.modal-body #recipient-name').val(recipient)
+            modal.find('.modal-body #link').val(recipient3)
+
+            modal.find('[name="desc"]').text(recipient2)
+            $("#editor2").val(recipient2);
+
+        })
+        $('#apeModal').on('show.bs.modal', function(event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var href = button.data('href')
+
+            var modal = $(this)
+
+            modal.find('.modal-footer #button_hapus').attr('href', href)
+
+
+        })
     </script>
 
 </body>

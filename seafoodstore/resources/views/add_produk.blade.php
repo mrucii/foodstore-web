@@ -393,21 +393,21 @@
 
                                             <td>
                                                 <div class="my-2"></div>
-                                                <a href="#" class="btn btn-info btn-icon-split edit" data-toggle="modal" data-target="#edit" data-judul="{{$value->nama_product}}" data-isi="{{$value->deskripsi}}">
+                                                <button id="edit" href="#" class="btn btn-info btn-icon-split edit" data-toggle="modal" data-target="#editModal" data-judul="{{$value->nama_product}}" data-isi="{!!$value->deskripsi!!}" data-kemasan="{{$value->isi}}">
                                                     <span class="icon text-white-50">
                                                         <i class="fas fa-edit"></i>
                                                     </span>
                                                     <span class="text">Edit</span>
-                                                </a>
+                                                </button>
                                             </td>
                                             <td>
                                                 <div class="my-2"></div>
-                                                <a href="#" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#apeModal">
+                                                <button id="hapus" href="#" class="btn btn-danger btn-icon-split cd-trigger" data-href="{{route('delete_produk', ['id' => $value->id])}}" data-toggle="modal" data-target="#apeModal">
                                                     <span class="icon text-white-50">
                                                         <i class="fas fa-trash"></i>
                                                     </span>
                                                     <span class="text">Delete</span>
-                                                </a>
+                                                </button>
                                             </td>
 
                                         </tr>
@@ -424,7 +424,9 @@
 
 
 
-                <div id="edit" class="modal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+                <div class="modal fade" tabindex="-1" role="dialog" id="editModal">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -437,7 +439,7 @@
                                 <form action="" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group">
-                                        <label id="juduls"for="" class="col-form-label">Nama Produk*</label>
+                                        <label id="juduls" for="" class="col-form-label">Nama Produk*</label>
                                         <input type="text" class="form-control" id="recipient-name" name="judul" required>
 
 
@@ -448,24 +450,24 @@
                                             <option selected>Ikan</option>
                                             <option>Udang</option>
                                         </select>
-
                                         <label for="" class="col-form-label">Isi Dalam Kemasan*</label>
-                                        <input type="text" class="form-control" id="recipient-name" name="isi">
+                                        <input type="text" class="form-control" id="isi_kemasan" name="isi">
 
                                         <label for="">Gambar 1*</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image1" accept="image/*" required>
 
 
                                         <label for="">Gambar 2*</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image2" accept="image/*">
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile2" name="image2" accept="image/*">
 
 
                                         <label for="">Gambar 3*</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image3" accept="image/*">
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile3" name="image3" accept="image/*">
 
 
                                         <label for="">Gambar 4*</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image4" accept="image/*">
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile4" name="image4" accept="image/*">
+
                                     </div>
                                     <div class="modal-footer">
                                         <button type="submit" class="btn btn-primary">Tambah</button>
@@ -491,7 +493,7 @@
                                 <p>Apakah anda yakin ingin menghapus produk ini?</p>
                             </div>
                             <div class="modal-footer">
-                                <a href="{{route('delete_produk', ['id' => $value->id])}}"  class="btn btn-danger">Hapus</a>
+                                <a id="button_hapus" class="btn btn-danger">Hapus</a>
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                         </div>
@@ -595,6 +597,46 @@
 
         <!-- Bootstrap core JavaScript-->
         <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+        <script>
+            // jQuery(document).ready(function($) {
+            //             $('#edit').on('show', function(e) {
+            //                 var link = e.relatedTarget(),
+            //                     modal = $(this),
+            //                     username = link.data("judul"),
+            //                     email = link.data("deskripsi");
+
+            //                 modal.find("modal-content").find("modal-body").find("form-group").find("#deskripsi").val(email);
+            //                 modal.find("#deskripsi").val(username);
+            //             });
+            //         },
+
+            $('#editModal').on('show.bs.modal', function(event) {
+                var button = $(event.relatedTarget) // Button that triggered the modal
+                var recipient = button.data('judul')
+                var recipient2 = button.data('isi')
+                var recipient3 = button.data('kemasan') // Extract info from data-* attributes
+                // // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                // // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                var modal = $(this)
+
+                modal.find('.modal-body #recipient-name').val(recipient)
+                modal.find('.modal-body #isi_kemasan').val(recipient3)
+
+                modal.find('[name="desc"]').text(recipient2)
+                $("#editor2").val(recipient2);
+
+            })
+            $('#apeModal').on('show.bs.modal', function(event) {
+                var button = $(event.relatedTarget) // Button that triggered the modal
+                var href = button.data('href')
+               
+                var modal = $(this)
+
+                modal.find('.modal-footer #button_hapus').attr('href', href)
+               
+
+            })
+        </script>
         <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
         <!-- Core plugin JavaScript-->
@@ -609,21 +651,13 @@
         <script src="{{asset('vendor/datatables/jquery.dataTables.min.js')}}"></script>
         <script src="{{asset('vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
 
+
         <!-- Page level custom scripts -->
         <script src="{{asset('js/demo/datatables-demo.js')}}"></script>
-        <script>
-            jQuery(document).ready(function($) {
-                        $('#edit').on('show', function(e) {
-                            var link = e.relatedTarget(),
-                                modal = $(this),
-                                username = link.data("judul"),
-                                email = link.data("deskripsi");
 
-                            modal.find("modal-content").find("modal-body").find("form-group").find("#deskripsi").val(email);
-                            modal.find("#deskripsi").val(username);
-                        });
-                    }
-        </script>
+
+
+
 
 </body>
 
