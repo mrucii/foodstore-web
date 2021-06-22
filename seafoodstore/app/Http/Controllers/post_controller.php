@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\post;
+use File;
 class post_controller extends Controller
 {
     /**
@@ -26,7 +27,7 @@ class post_controller extends Controller
 
     public function detail_blog($id)
     {
-        $post_detail = post::where('id',$id)->get();
+        $post_detail = post::where('id', $id)->get();
         return view('detailblog', ['post_detail' => $post_detail]);
     }
 
@@ -50,7 +51,32 @@ class post_controller extends Controller
         $post->save();
         return back()->with('success', 'Selamat, Post telah berhasil ditambahkan.');
     }
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $post = post::find($id);
+        $request->validate([
+            'gambar' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        if ($request->hasFile('gambar')) {
+            File::delete(public_path('images/' . $post->photo));
+            $imageName1 = time() . 1 . '.' . $request->gambar->extension();
+            $request->gambar->move(public_path('images'), $imageName1);
+            $post->photo =  $imageName1;
+        };
+        $post->title = $request->judul;
+        $post->isi = $request->editor2;
+        $post->author = "Admin 1";
+        $post->save();
+        return back()->with('success', 'Selamat, Post telah berhasil diedit.');
 
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -84,17 +110,8 @@ class post_controller extends Controller
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
+    
+
 
     /**
      * Remove the specified resource from storage.
@@ -104,6 +121,9 @@ class post_controller extends Controller
      */
     public function destroy($id)
     {
+        
+        $post = post::find($id);
+        File::delete(public_path('images/' . $post->photo));
         post::destroy($id);
         return back();
     }

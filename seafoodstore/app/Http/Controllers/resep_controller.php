@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\resep;
 use Illuminate\Http\Request;
-
+use File;
 class resep_controller extends Controller
 {
     /**
@@ -86,7 +86,12 @@ class resep_controller extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $post = resep::find($id);
+        $post->nama = $request->judul;
+        $post->isi = $request->isi;
+        $post->link_youtube = $request->link;
+        $post->save();
+        return back()->with('success', 'Selamat, Resep telah berhasil diedit.');
     }
 
     /**

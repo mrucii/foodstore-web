@@ -346,7 +346,12 @@
                     <h1 class="h3 mb-2 text-gray-800">Tables</h1>
                     <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
-
+                    @if ($message = Session::get('success'))
+                    <div class="alert alert-success alert-block">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <strong>{{ $message }}</strong>
+                    </div>
+                    @endif
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
@@ -388,7 +393,7 @@
 
                                             <td>
                                                 <div class="my-2"></div>
-                                                <button href="#" class="btn btn-info btn-icon-split edit" data-toggle="modal" data-target="#editModal" data-judul="{{$value->nama}}" data-isi="{{$value->isi}}" data-link="{{$value->link_youtube}}">
+                                                <button href="#" class="btn btn-info btn-icon-split edit" data-toggle="modal" data-target="#editModal" data-href="{{route('edit_resep', ['id' => $value->id])}}" data-judul="{{$value->nama}}" data-isi="{{$value->isi}}" data-link="{{$value->link_youtube}}">
                                                     <span class="icon text-white-50">
                                                         <i class="fas fa-edit"></i>
                                                     </span>
@@ -430,7 +435,8 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form>
+                                <form id="form_edit" method="POST">
+                                    @csrf
                                     <div class="form-group">
                                         <label for="" class="col-form-label">Judul Resep</label>
                                         <input name="judul" type="text" class="form-control" id="recipient-name" required>
@@ -438,12 +444,13 @@
                                         <input name="link" type="text" class="form-control" id="link" required>
                                         <label for="" class="col-form-label">Deskripsi</label><textarea name="isi" id="editor2"></textarea>
                                     </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Simpan</button>
+                                    </div>
                                 </form>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Simpan</button>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -463,7 +470,7 @@
                             <p>Apakah anda yakin ingin menghapus artikel ini?</p>
                         </div>
                         <div class="modal-footer">
-                            <a id="button_hapus"href="" class="btn btn-danger">Hapus</a>
+                            <a id="button_hapus" href="" class="btn btn-danger">Hapus</a>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
@@ -557,50 +564,37 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/classic/ckeditor.js"></script>
+
     <script>
-        ClassicEditor
-            .create(document.querySelector('#editor'))
-            .catch(error => {
-                console.error(error);
-            });
-    </script>
-    <script>
+        var YourEditor;
         ClassicEditor
             .create(document.querySelector('#editor2'))
-            .catch(error => {
-                console.error(error);
-            });
-    </script>
-    <script>
-        // jQuery(document).ready(function($) {
-        //             $('#edit').on('show', function(e) {
-        //                 var link = e.relatedTarget(),
-        //                     modal = $(this),
-        //                     username = link.data("judul"),
-        //                     email = link.data("deskripsi");
-
-        //                 modal.find("modal-content").find("modal-body").find("form-group").find("#deskripsi").val(email);
-        //                 modal.find("#deskripsi").val(username);
-        //             });
-        //         },
-
+            .then(editor => {
+                window.editor = editor;
+                YourEditor = editor;
+            })
         $('#editModal').on('show.bs.modal', function(event) {
+
             var button = $(event.relatedTarget) // Button that triggered the modal
             var recipient = button.data('judul')
             var recipient2 = button.data('isi')
-            var recipient3 = button.data('link') // Extract info from data-* attributes
+            var recipient3 = button.data('link')
+            var href = button.data('href') // Extract info from data-* attributes
             // // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
             // // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
             var modal = $(this)
 
             modal.find('.modal-body #recipient-name').val(recipient)
             modal.find('.modal-body #link').val(recipient3)
-
-            modal.find('[name="desc"]').text(recipient2)
-            $("#editor2").val(recipient2);
+            modal.find('.modal-body #form_edit').attr('action', href)
+            
+            YourEditor.setData(recipient2);
 
         })
+
         $('#apeModal').on('show.bs.modal', function(event) {
+
             var button = $(event.relatedTarget) // Button that triggered the modal
             var href = button.data('href')
 
@@ -611,6 +605,14 @@
 
         })
     </script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+
 
 </body>
 

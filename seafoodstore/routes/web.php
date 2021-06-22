@@ -59,12 +59,15 @@ Route::get('/blank', function () {
 Route::get('/add_produk', 'product_controller@index_admin')->name('add_index');
 Route::post('/add_produk', 'product_controller@create')->name('add_produk');
 Route::get('/delete_produk/{id}', 'product_controller@destroy')->name('delete_produk');
-Route::get('/delete_post/{id}', 'post_controller@destroy')->name('delete_post');
-Route::get('/delete_resep/{id}', 'resep_controller@destroy')->name('delete_resep');
+Route::post('/add_produk/{id}', 'product_controller@update')->name('edit_produk');
 
 
 Route::get('/add_blog', 'post_controller@index_admin');
 Route::post('/add_blog', 'post_controller@create')->name('add_post');
+Route::get('/delete_post/{id}', 'post_controller@destroy')->name('delete_post');
+Route::post('/add_blog/{id}', 'post_controller@update')->name('edit_post');
 
 Route::get('/add_resep','resep_controller@index_admin' );
 Route::post('/add_resep','resep_controller@create' )->name('add_resep');
+Route::get('/delete_resep/{id}', 'resep_controller@destroy')->name('delete_resep');
+Route::post('/add_resep/{id}', 'resep_controller@update')->name('edit_resep');

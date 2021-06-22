@@ -393,7 +393,7 @@
 
                                             <td>
                                                 <div class="my-2"></div>
-                                                <button id="edit" href="#" class="btn btn-info btn-icon-split edit" data-toggle="modal" data-target="#editModal" data-judul="{{$value->nama_product}}" data-isi="{!!$value->deskripsi!!}" data-kemasan="{{$value->isi}}">
+                                                <button id="edit" href="#" class="btn btn-info btn-icon-split edit" data-toggle="modal" data-target="#editModal" data-href="{{route('edit_produk', ['id' => $value->id])}}" data-judul="{{$value->nama_product}}" data-isi="{!!$value->deskripsi!!}" data-kemasan="{{$value->isi}}">
                                                     <span class="icon text-white-50">
                                                         <i class="fas fa-edit"></i>
                                                     </span>
@@ -436,7 +436,7 @@
                                 </button>
                             </div>
                             <div class="modal-body" id="modal_edit">
-                                <form action="" method="POST" enctype="multipart/form-data">
+                                <form id="form_edit" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group">
                                         <label id="juduls" for="" class="col-form-label">Nama Produk*</label>
@@ -453,24 +453,24 @@
                                         <label for="" class="col-form-label">Isi Dalam Kemasan*</label>
                                         <input type="text" class="form-control" id="isi_kemasan" name="isi">
 
-                                        <label for="">Gambar 1*</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image1" accept="image/*" required>
+                                        <label for="">Gambar 1</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image1" accept="image/*">
 
 
-                                        <label for="">Gambar 2*</label>
+                                        <label for="">Gambar 2</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile2" name="image2" accept="image/*">
 
 
-                                        <label for="">Gambar 3*</label>
+                                        <label for="">Gambar 3</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile3" name="image3" accept="image/*">
 
 
-                                        <label for="">Gambar 4*</label>
+                                        <label for="">Gambar 4</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile4" name="image4" accept="image/*">
 
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="submit" class="btn btn-primary">Tambah</button>
+                                        <button type="submit" class="btn btn-primary">Simpan</button>
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                     </div>
                                 </form>
@@ -598,42 +598,39 @@
         <!-- Bootstrap core JavaScript-->
         <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
         <script>
-            // jQuery(document).ready(function($) {
-            //             $('#edit').on('show', function(e) {
-            //                 var link = e.relatedTarget(),
-            //                     modal = $(this),
-            //                     username = link.data("judul"),
-            //                     email = link.data("deskripsi");
-
-            //                 modal.find("modal-content").find("modal-body").find("form-group").find("#deskripsi").val(email);
-            //                 modal.find("#deskripsi").val(username);
-            //             });
-            //         },
+            var YourEditor;
+            ClassicEditor
+                .create(document.querySelector('#editor2'))
+                .then(editor => {
+                    window.editor = editor;
+                    YourEditor = editor;
+                })
 
             $('#editModal').on('show.bs.modal', function(event) {
                 var button = $(event.relatedTarget) // Button that triggered the modal
                 var recipient = button.data('judul')
                 var recipient2 = button.data('isi')
-                var recipient3 = button.data('kemasan') // Extract info from data-* attributes
+                var recipient3 = button.data('kemasan') 
+                var href = button.data('href') // Extract info from data-* attributes
                 // // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
                 // // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
                 var modal = $(this)
 
                 modal.find('.modal-body #recipient-name').val(recipient)
                 modal.find('.modal-body #isi_kemasan').val(recipient3)
+                modal.find('.modal-body #form_edit').attr('action', href)
+                YourEditor.setData(recipient2);
 
-                modal.find('[name="desc"]').text(recipient2)
-                $("#editor2").val(recipient2);
 
             })
             $('#apeModal').on('show.bs.modal', function(event) {
                 var button = $(event.relatedTarget) // Button that triggered the modal
                 var href = button.data('href')
-               
+
                 var modal = $(this)
 
                 modal.find('.modal-footer #button_hapus').attr('href', href)
-               
+
 
             })
         </script>

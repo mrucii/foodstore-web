@@ -393,7 +393,7 @@
 
                                             <td>
                                                 <div class="my-2"></div>
-                                                <button id="edit" href="#" class="btn btn-info btn-icon-split edit" data-toggle="modal" data-target="#editModal" data-judul="{{$value->title}}" data-isi="{!!$value->isi!!}">
+                                                <button id="edit" href="#" class="btn btn-info btn-icon-split edit" data-toggle="modal" data-target="#editModal" data-hrefs="{{route('edit_post', ['id' => $value->id])}}" data-judul="{{$value->title}}" data-isi="{!!$value->isi!!}">
                                                     <span class="icon text-white-50">
                                                         <i class="fas fa-edit"></i>
                                                     </span>
@@ -435,28 +435,27 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form>
+                                <form id="formulir" method="POST" enctype="multipart/form-data" enctype="multipart/form-data">
+                                    @csrf
                                     <div class="form-group">
                                         <label for="recipient-name" class="col-form-label">Judul Blog</label>
-                                        <input type="text" class="form-control" id="recipient-name">
+                                        <input name="judul"type="text" class="form-control" id="recipient-name" required>
 
 
                                         <label for="message-text" class="col-form-label">Isi</label>
-                                        <div id="editor"></div>
-
-
-
+                                        <textarea id="editor_1" name="editor2"></textarea>
 
                                         <label for="exampleFormControlFile1">Upload foto</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                        <input type="file" name="gambar" class="form-control-file" id="exampleFormControlFile1" accept="image/*">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Simpan</button>
                                     </div>
                                 </form>
 
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Simpan</button>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -501,7 +500,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Isi</label>
-                                    <textarea name="editor2" id="editor2"></textarea>
+                                    <textarea name="editor2" id="editor"></textarea>
 
                                 </div>
 
@@ -582,17 +581,27 @@
     <!-- Page level custom scripts -->
     <script src="{{asset('js/demo/datatables-demo.js')}}"></script>
     <script>
+        var YourEditor;
+        ClassicEditor
+            .create(document.querySelector('#editor_1'))
+            .then(editor => {
+                window.editor = editor;
+                YourEditor = editor;
+            })
         $('#editModal').on('show.bs.modal', function(event) {
             var button = $(event.relatedTarget) // Button that triggered the modal
             var recipient = button.data('judul')
             var recipient2 = button.data('isi')
-
+            var href = button.data('hrefs')
             // // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
             // // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
             var modal = $(this)
-
+            
+            console.log(href)
             modal.find('.modal-body #recipient-name').val(recipient)
-            modal.find('.modal-body #editor').val(recipient2)
+            modal.find('.modal-body #formulir').attr('action', href)
+            YourEditor.setData(recipient2);
+
 
         })
         $('#apeModal').on('show.bs.modal', function(event) {
