@@ -56,6 +56,14 @@ Route::get('/blank', function () {
     return view('blank');
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/msgvisitor', function () {
+    return view('msgvisitor');
+});
+
 Route::get('/add_produk', 'product_controller@index_admin')->name('add_index');
 Route::post('/add_produk', 'product_controller@create')->name('add_produk');
 Route::get('/delete_produk/{id}', 'product_controller@destroy')->name('delete_produk');
