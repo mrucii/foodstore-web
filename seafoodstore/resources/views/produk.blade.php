@@ -70,14 +70,11 @@
           <li class="active"><a href="{{route('products')}}">Produk</a></li>
           <li><a href="{{route('reseps')}}">Resep</a></li>
           <li><a href="{{route('blogs')}}">Blog</a></li>
-          <!-- <li><a href="#chefs">Chefs</a></li> -->
-          <!-- <li><a href="#gallery">Produk</a></li> -->
           <li><a href="/contact">Contact</a></li>
 
-          <li class="book-a-table text-center"><a href="#book-a-table">Hubungi Kami</a></li>
+          <li class="book-a-table text-center"><a href="#book-a-table">Chat Kami!</a></li>
         </ul>
       </nav><!-- .nav-menu -->
-
     </div>
   </header><!-- End Header -->
 
@@ -99,9 +96,6 @@
                   usaha tambak udang sejak tahun 2014 telah memberikan banyak pelajaran berharga
                   untuk senantiasa meningkatkan profesionalisme usaha dalam hal peningkatan
                   manajemen usaha.</p>
-                <div>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Chat Us!</a>
-                </div>
               </div>
             </div>
           </div>
@@ -112,9 +106,6 @@
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown">Cahaya Seafood</h2>
                 <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Chat Us!</a>
-                </div>
               </div>
             </div>
           </div>
@@ -126,9 +117,6 @@
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown">Cahaya Seafood</h2>
                 <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Chat Us!</a>
-                </div>
               </div>
             </div>
           </div>
@@ -315,7 +303,6 @@
   <div class="sbuttons">
    
     <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." target="_blank" class="sbutton whatsapp" tooltip="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    <a href="#" target="_blank" class="sbutton fb" tooltip="Facebook"><i class="fab fa-facebook-f"></i></a>
     <a href="#" target="_blank" class="sbutton telegram" tooltip="Telegram"><i class="fab fa-telegram"></i></a>
     <a target="_blank" class="sbutton mainsbutton" tooltip="Share"><i class="fa fa-phone"></i></a>
   </div>  
